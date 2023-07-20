@@ -1,0 +1,93 @@
+body {
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3764A5;
+    height: 100vh;
+}
+   
+.Loginpage {
+  background: #ffffff;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+}
+
+
+.Loginpage .email {
+    background: white;
+    box-shadow: 0 0 0.5em #212121;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border-radius: 10px;
+    opacity: 0.8;
+    margin-top: -3em;
+}
+
+.Loginpage .password {
+    background: white;
+    box-shadow: 0 0 0.5em #212121;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border-radius: 10px;
+    color: #1E1E1E;
+    opacity: 0.8;
+}
+
+.Loginpage .password input {
+    outline: none;
+    border: none;
+}
+
+.Loginpage .email input {
+  outline: none;
+  border: none;
+}
+
+  /* .Loginpage .password input::-moz-placeholder {
+    color: black;
+    font-size: 0.9em;
+  }
+  .Loginpage .password input:-ms-input-placeholder {
+    color: black;
+    font-size: 0.9em;
+  }
+  .Loginpage .password input::placeholder {
+    color: black;
+    font-size: 0.9em;
+  } */
+
+  .Loginpage .login {
+    padding: 1em;
+    background: #F4C744;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+  }
+  
+  .Loginpage .footer span {
+    cursor: pointer;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+
+.error{
+  position: absolute;
+  top: 66%;
+  right: 44%;
+  color: red;
+}
+
+.eyeicon{
+  position: relative;
+  left: 130px;
+}

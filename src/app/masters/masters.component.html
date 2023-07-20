@@ -1,0 +1,101 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+
+
+<div *ngIf="masters">
+  <h1>Masters</h1>
+
+  <div class = "search-container">
+
+      <img class = "searchicon"src="assets/images/icons/search.png" alt="Search icon." width="20" 
+      >
+      <div class="sec-2">
+        <input type="text" name="searchbar" placeholder="Search" />
+      </div> 
+  </div>
+  
+  <button class="admindetails" (click)="enablemastersdetails('masterdetailsbutton')"> 
+      
+      <table class="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">NAME</th>
+              <th scope="col">DATE</th>
+              <th scope="col">SKILLS</th>
+              <th scope="col">NO. OF SESSIONS</th>
+              <th scope="col">LAST LOGIN</th>
+              <th scope="col">STATUS</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                  alt=""
+                  style="width: 40px; height: 40px"
+                  class="rounded-circle"/></td>
+              <td>Luna fermoyle</td>
+              <td>05/21/23</td>
+              <td>Maths</td>
+              <td>4</td>
+              <td>05/21/23</td>
+              <td>Verified</td>
+        
+            </tr>
+            <tr>
+              <td><img src="https://images.pexels.com/photos/5378700/pexels-photo-5378700.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  alt=""
+                  style="width: 40px; height: 40px"
+                  class="rounded-circle"/></td>
+              <td>Nicholas Simone</td>
+              <td>05/21/23</td>
+              <td>Graphics Designing</td>
+              <td>4</td>
+              <td>05/21/23</td>
+              <td>Non Verified</td>
+            </tr>
+            <tr>
+              <td><img src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                  alt=""
+                  style="width: 40px; height: 40px"
+                  class="rounded-circle"/></td>
+              <td>Luna fermoyle</td>
+              <td>05/21/23</td>
+              <td>Html/Css</td>
+              <td>4</td>
+              <td>05/21/23</td>
+              <td>Verified</td>
+            </tr>
+            <tr>
+              <td><img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  alt=""
+                  style="width: 40px; height: 40px"
+                  class="rounded-circle"/></td>
+              <td>Pooja Patil</td>
+              <td>05/21/23</td>
+              <td>Java</td>
+              <td>4</td>
+              <td>05/21/23</td>
+              <td>Non Verified</td>
+            </tr>
+            <tr>
+              <td><img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  alt=""
+                  style="width: 40px; height: 40px"
+                  class="rounded-circle"/></td>
+              <td>Nicholas Simone</td>
+              <td>05/21/23</td>
+              <td>Science</td>
+              <td>4</td>
+              <td>05/21/23</td>
+              <td>Non Verified</td>
+            </tr>
+          </tbody>
+        </table>
+  </button>
+</div>
+
+<div *ngIf="mastersdetailspage">
+  <app-mastersdetails></app-mastersdetails>
+</div>
+
