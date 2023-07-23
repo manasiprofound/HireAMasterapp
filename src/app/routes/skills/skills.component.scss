@@ -1,0 +1,66 @@
+h1 {
+  position: relative;
+  top: 190px;
+  color: #3764A5;
+  font-size: 30px;
+  font-family: Mulish;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+img {
+  position: relative;
+  top: 60px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  appearance: none;
+}
+
+input[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 0px;
+  width: 300px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #EAEAEA;
+  background: #FFF;
+}
+
+/*
+width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 0px;
+  width: 420px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #EAEAEA;
+  background: #FFF;
+*/
+.addskills {
+  position: relative;
+  bottom: 45px;
+  left: 350px;
+  font-family: "Poppins";
+  font-size: 18px;
+  border-radius: 700px;
+  background: #F4C744;
+  color: rgb(12, 15, 15);
+  padding: 10px;
+  border: 30px solid #edcd7a;
+  outline: none;
+  border: none;
+}
+
+.skillstable {
+  position: relative;
+  bottom: 20px
+}

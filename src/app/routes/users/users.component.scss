@@ -1,0 +1,63 @@
+* {
+  font-family: 'Mulish', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.addAdmin {
+  position: relative;
+  top: 40px;
+  font-size: 20px;
+  border-radius: 500px;
+  background: #F4C744;
+  color: black;
+  padding: 10px;
+  border: 0px;
+  outline: none;
+}
+
+h1 {
+  position: relative;
+  top: 50px;
+  color: #3764A5;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+img {
+  position: relative;
+  top: 20px;
+}
+
+.search-container {
+  top: 40px;
+  margin-left: 1220px;
+}
+
+.admindetails {
+  outline: none;
+  border: none;
+  background-color: white;
+}
+
+
+input[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  width: 200px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #EAEAEA;
+}
+
+.searchicon {
+  position: relative;
+  top: 40px;
+  left: 170px;
+}

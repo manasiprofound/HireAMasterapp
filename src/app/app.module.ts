@@ -1,60 +1,48 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
-
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { MenuComponent } from './menu/menu.component';
-import { HomeComponent } from './home/home.component';
-
+import { HeaderComponent } from './Components/header/header.component';
+import { FooterComponent } from './Components/footer/footer.component';
+import { MenuComponent } from './Components/menu/menu.component';
+import { AddprofileComponent } from './routes/addprofile/addprofile.component';
+import { AdmindetailsComponent } from './routes/admindetails/admindetails.component';
+import { LoginComponent } from './routes/login/login.component';
+import { MastersComponent } from './routes/masters/masters.component';
+import { HomeComponent } from './routes/home/home.component';
+import { MastersdetailsComponent } from './routes/mastersdetails/mastersdetails.component';
+import { SkillsComponent } from './routes/skills/skills.component';
+import { SubscribersComponent } from './routes/subscribers/subscribers.component';
+import { SubscribersdetailsComponent } from './routes/subscribersdetails/subscribersdetails.component';
+import { UsersComponent } from './routes/users/users.component';
 import { FormsModule } from '@angular/forms';
-import { AddprofileComponent } from './addprofile/addprofile.component';
-import { UsersComponent } from './users/users.component';
-import { MastersComponent } from './masters/masters.component';
-import { SubscribersComponent } from './subscribers/subscribers.component';
-import { SkillsComponent } from './skills/skills.component';
-import { AdmindetailsComponent } from './admindetails/admindetails.component';
-import { MastersdetailsComponent } from './mastersdetails/mastersdetails.component';
-import { SubscribersdetailsComponent } from './subscribersdetails/subscribersdetails.component';
-import { HomepageComponent } from './homepage/homepage.component';
-import { MasterregComponent } from './masterreg/masterreg.component';
-import { EditskillComponent } from './editskill/editskill.component';
-import { UserloginComponent } from './userlogin/userlogin.component';
+import { EditskillComponent } from './routes/editskill/editskill.component';
+import { DataTablesModule } from 'angular-datatables';
 
 @NgModule({
   declarations: [
-    
     AppComponent,
-    LoginComponent,
     HeaderComponent,
     FooterComponent,
     MenuComponent,
-    HomeComponent,
     AddprofileComponent,
-    UsersComponent,
-    MastersComponent,
-    SubscribersComponent,
-    SkillsComponent,
     AdmindetailsComponent,
+    LoginComponent,
+    MastersComponent,
+    HomeComponent,
     MastersdetailsComponent,
+    SkillsComponent,
+    SubscribersComponent,
     SubscribersdetailsComponent,
-    HomepageComponent,
-    MasterregComponent,
-    EditskillComponent,
-    UserloginComponent,
-  
+    UsersComponent,
+    EditskillComponent
   ],
   imports: [
-    RouterModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    // NgbModule,
-    // DataTablesModule,
+    DataTablesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
