@@ -16,7 +16,7 @@
     </div>
   </div> -->
 </div>
-<div class="container mt-5">
+<div *ngIf="users" class="container mt-5">
   <table
     datatable
     [dtOptions]="dtOptions"
