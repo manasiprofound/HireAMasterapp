@@ -14,4 +14,7 @@ export class HomepageComponent {
     this.router.navigate(['masterreg']);
   }
 
+  userlogin(){
+    this.router.navigate(['userlogin'])
+  }
 }
