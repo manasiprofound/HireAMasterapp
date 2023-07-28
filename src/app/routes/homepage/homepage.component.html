@@ -1,336 +1,185 @@
-<script
-  nomodule
-  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-></script>
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
-/>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
-  rel="stylesheet"
-/>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
 
-<div class="header-container">
-  <section id="logo">
-    <img
-      src="assets/images/HireAMasterLogo.png"
-      alt="A logo of a character standing near the letter
-             A and the company named HireAMaster."
-      title="HireAMaster Logo"
-      width="220"
-      height="auto"
-    />
-  </section>
 
-  <div class="search-container">
-    <img
-      class="searchicon"
-      src="assets/images/icons/search.png"
-      alt="Search icon."
-      width="20"
-    />
-    <div class="sec-2">
-      <input type="text" name="searchbar" placeholder="Search" />
+<div class = "header-container">
+
+    <section id = "logo">
+        <img 
+            src="assets/images/HireAMasterLogo.png" 
+            alt="A logo of a character standing near the letter 
+             A and the company named HireAMaster." 
+            title="HireAMaster Logo"
+            width="220"
+            height="auto"
+        />
+    </section>
+
+    <div class = "search-container">
+
+        <img class = "searchicon"src="assets/images/icons/search.png" alt="Search icon." width="20" >
+          <div class="sec-2">
+          
+            <input type="text" name="searchbar" placeholder="Search" />
+        </div> 
     </div>
-  </div>
 
-  <div class="button">
-    <button class="signup">Signup</button>
-  </div>
+    <div class = "button">
+        <button class="signup" >Signup</button>  
+    </div> 
+
 </div>
 
 <div class="body-container">
-  <ul class="nav">
-    <li><a href="" (click)="register()">About Us</a></li>
-    <li><a href="">Become a Master</a></li>
-    <li><a href="">Testimonial</a></li>
-    <li><a href="">FAQs</a></li>
-    <li><a href="">Sign Up</a></li>
-  </ul>
+    <ul class = "nav">
+        <li><a href="" >About Us</a></li>
+        <li><a href="" (click) = "register()">Become a Master</a></li>
+        <li><a href="">Testimonial</a></li>
+        <li><a href="">FAQs</a></li>
+        <li><a href="" (click) ="userlogin()">Sign Up</a></li>
+    </ul>
+    
+    <h1>It is the time to HIRE A MASTER.</h1>
 
-  <h1>It is the time to HIRE A MASTER.</h1>
+    <div class="feedback-container1">
+        <div class = "profilepic">
+            <img 
+            src="assets/images/Profilepic.png" 
+            alt="" title="Profie img"
+            width="80"
+            height="auto"/>
+        </div>
+        <h2>Aaron Zaun</h2>
+        <h3>I have a 3 years of teaching maths</h3>
+        <h4>"Students feedback appears here."</h4>
+        <div class = "star1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+                <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#FFE604"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+                <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#FFE604"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+                <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#FFE604"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+                <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#FFE604"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+                <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#FFFFFF"/>
+            </svg>
+        </div>
+    </div>
 
-  <div class="feedback-container1">
-    <div class="profilepic">
-      <img
-        src="assets/images/Profilepic.png"
-        alt=""
-        title="Profie img"
-        width="80"
-        height="auto"
-      />
+    <div class="feedback-container2">
+        <div class = "profilepic">
+            <img 
+            src="assets/images/Profilepic2.png" 
+            alt="" title="Profie img"
+            width="80"
+            height="auto"/>
+        </div>
+        <h2>Aaila Malik</h2>
+        <h3>I have a 6 years of teaching jave scripts</h3>
+        <h4>"Students feedback appears here."</h4>
+        <div class = "star2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+                <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#FFE604"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+                <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#FFE604"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+                <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#FFE604"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+                <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#FFFFFF"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+                <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#FFFFFF"/>
+            </svg>
+        </div>
     </div>
-    <h2>Aaron Zaun</h2>
-    <h3>I have a 3 years of teaching maths</h3>
-    <h4>"Students feedback appears here."</h4>
-    <div class="star1">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="20"
-        height="19"
-        viewBox="0 0 20 19"
-        fill="none"
-      >
-        <path
-          d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-          fill="#FFE604"
-        />
-      </svg>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="20"
-        height="19"
-        viewBox="0 0 20 19"
-        fill="none"
-      >
-        <path
-          d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-          fill="#FFE604"
-        />
-      </svg>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="20"
-        height="19"
-        viewBox="0 0 20 19"
-        fill="none"
-      >
-        <path
-          d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-          fill="#FFE604"
-        />
-      </svg>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="20"
-        height="19"
-        viewBox="0 0 20 19"
-        fill="none"
-      >
-        <path
-          d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-          fill="#FFE604"
-        />
-      </svg>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="20"
-        height="19"
-        viewBox="0 0 20 19"
-        fill="none"
-      >
-        <path
-          d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-          fill="#FFFFFF"
-        />
-      </svg>
-    </div>
-  </div>
 
-  <div class="feedback-container2">
-    <div class="profilepic">
-      <img
-        src="assets/images/Profilepic2.png"
-        alt=""
-        title="Profie img"
-        width="80"
-        height="auto"
-      />
+    <div class="feedback-container3">
+        <div class = "profilepic">
+            <img 
+            src="assets/images/Profilepic3.png" 
+            alt="" title="Profie img"
+            width="80"
+            height="auto"/>
+        </div>
+        <h2>Riya Patil</h2>
+        <h3>I have a 8 years of teaching web designing</h3>
+        <h4>"Students feedback appears here."</h4>
     </div>
-    <h2>Aaila Malik</h2>
-    <h3>I have a 6 years of teaching jave scripts</h3>
-    <h4>"Students feedback appears here."</h4>
-    <div class="star2">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="20"
-        height="19"
-        viewBox="0 0 20 19"
-        fill="none"
-      >
-        <path
-          d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-          fill="#FFE604"
-        />
-      </svg>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="20"
-        height="19"
-        viewBox="0 0 20 19"
-        fill="none"
-      >
-        <path
-          d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-          fill="#FFE604"
-        />
-      </svg>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="20"
-        height="19"
-        viewBox="0 0 20 19"
-        fill="none"
-      >
-        <path
-          d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-          fill="#FFE604"
-        />
-      </svg>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="20"
-        height="19"
-        viewBox="0 0 20 19"
-        fill="none"
-      >
-        <path
-          d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-          fill="#FFFFFF"
-        />
-      </svg>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="20"
-        height="19"
-        viewBox="0 0 20 19"
-        fill="none"
-      >
-        <path
-          d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-          fill="#FFFFFF"
-        />
-      </svg>
-    </div>
-  </div>
 
-  <div class="feedback-container3">
-    <div class="profilepic">
-      <img
-        src="assets/images/Profilepic3.png"
-        alt=""
-        title="Profie img"
-        width="80"
-        height="auto"
-      />
+    <div class = "star3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+            <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#FFE604"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+            <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#FFE604"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+            <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#FFE604"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+            <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#FFE604"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+            <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#FFFFFF"/>
+        </svg>
     </div>
-    <h2>Riya Patil</h2>
-    <h3>I have a 8 years of teaching web designing</h3>
-    <h4>"Students feedback appears here."</h4>
-  </div>
-
-  <div class="star3">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="20"
-      height="19"
-      viewBox="0 0 20 19"
-      fill="none"
-    >
-      <path
-        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-        fill="#FFE604"
-      />
-    </svg>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="20"
-      height="19"
-      viewBox="0 0 20 19"
-      fill="none"
-    >
-      <path
-        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-        fill="#FFE604"
-      />
-    </svg>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="20"
-      height="19"
-      viewBox="0 0 20 19"
-      fill="none"
-    >
-      <path
-        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-        fill="#FFE604"
-      />
-    </svg>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="20"
-      height="19"
-      viewBox="0 0 20 19"
-      fill="none"
-    >
-      <path
-        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-        fill="#FFE604"
-      />
-    </svg>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="20"
-      height="19"
-      viewBox="0 0 20 19"
-      fill="none"
-    >
-      <path
-        d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
-        fill="#FFFFFF"
-      />
-    </svg>
-  </div>
-  <div class="textexp">
-    24/7 available masters Efficient google meet Explore various topics
-    including business, illustration, medicine and more
-  </div>
+    <div class = "textexp">
+        24/7 available masters
+        Efficient google meet
+        Explore various topics including business, illustration, medicine and more
+    </div>
 </div>
 
-<div class="signup">
-  <div class="animate">
-    <img
-      src="assets/images/Animate.png"
-      alt=""
-      title="Profie img"
-      width="100%"
-      height="auto"
-    />
-  </div>
+<div class = "signup">
+    <div class = "animate">
+        <img 
+        src="assets/images/Animate.png" 
+        alt="" title="Profie img"
+        width="100%"
+        height="auto"/>
+    </div>
+    
 </div>
 
 <div class="login-container">
-  <h5>Username</h5>
-  <div class="email">
-    <label for="email"></label>
-    <div class="sec-2">
-      <input type="email" name="email" placeholder="Username" />
+
+    <h5>Username</h5>
+    <div class="email">
+        <label for="email"></label>
+        <div class="sec-2">
+        <input type="email" name="email" placeholder="Username" /> 
+        </div>
     </div>
-  </div>
 
-  <h5>Password</h5>
-  <div class="password">
-    <label for="password"></label>
-    <div class="sec-2">
-      <input type="password" name="password" placeholder="Password" />
-      <img
-        class="eyeicon"
-        src="assets/images/icons/eye.png"
-        width="15"
-        alt=""
-      />
+    <h5>Password</h5>
+    <div class="password">
+        <label for="password"></label>
+        <div class="sec-2">
+        <input type="password" name="password" placeholder="Password" />
+        <img class = "eyeicon" src="assets/images/icons/eye.png" width="15" alt="">
+        </div>
     </div>
-  </div>
 
-  <h6>Forgot Password?</h6>
+    <h6>Forgot Password?</h6>
 
-  <div class="dropdown-content">
-    <button class="signin">Sign-in</button>
-  </div>
-  <div class="dropdown-content">
-    <button class="google">Sign in with google</button>
-  </div>
+    <div class="dropdown-content">
+        <button class = "signin" >
+            Sign-in
+        </button>
+    </div>
+    <div class="dropdown-content">
+        <button class = "google" >
+            Sign in with google
+        </button>
+    </div>
 </div>

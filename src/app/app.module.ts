@@ -19,6 +19,8 @@ import { UsersComponent } from './routes/users/users.component';
 import { FormsModule } from '@angular/forms';
 import { EditskillComponent } from './routes/editskill/editskill.component';
 import { DataTablesModule } from 'angular-datatables';
+import { Masterreg1Component } from './routes/masterreg1/masterreg1.component';
+
 
 @NgModule({
   declarations: [
@@ -36,7 +38,10 @@ import { DataTablesModule } from 'angular-datatables';
     SubscribersComponent,
     SubscribersdetailsComponent,
     UsersComponent,
-    EditskillComponent
+    EditskillComponent,
+    Masterreg1Component,
+
+
   ],
   imports: [
     BrowserModule,
