@@ -1,0 +1,47 @@
+<div
+  class="container d-flex justify-content-center align-items-center min-vh-100 p-lg-4"
+>
+  <div class="registation-box">
+    <h6 class="header">Registration</h6>
+
+    <ul class="nav nav-pills nav-fill nav-justified mt-5">
+      <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="tab" href="#tab1"
+          ><i class="bi bi-check-circle"></i>
+          Personal Details
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#tab2">
+          <i class="bi bi-check-circle"></i>
+          Make Your Profile
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#tab3">
+          <i class="bi bi-check-circle"></i> Verification
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#tab4"
+          ><i class="bi bi-check-circle"></i> Complete
+        </a>
+      </li>
+    </ul>
+
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="tab1">
+        <p>This is the content of Tab 1.</p>
+      </div>
+      <div class="tab-pane fade" id="tab2">
+        <p>This is the content of Tab 2.</p>
+      </div>
+      <div class="tab-pane fade" id="tab3">
+        <app-registration-verification></app-registration-verification>
+      </div>
+      <div class="tab-pane fade" id="tab4">
+        <app-registration-complete></app-registration-complete>
+      </div>
+    </div>
+  </div>
+</div>

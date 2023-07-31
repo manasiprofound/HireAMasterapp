@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-masterreg',
-  templateUrl: './masterreg.component.html',
-  styleUrls: ['./masterreg.component.css']
+  selector: 'app-registration-personal',
+  templateUrl: './registration-personal.component.html',
+  styleUrls: ['./registration-personal.component.scss']
 })
-export class MasterregComponent {
+export class RegistrationPersonalComponent {
   constructor(private router: Router){}
 
   reg(){

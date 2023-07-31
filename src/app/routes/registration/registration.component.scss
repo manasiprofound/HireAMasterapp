@@ -1,0 +1,32 @@
+.registation-box {
+  width: 90%;
+  height: 100%;
+  min-height: 20rem;
+  padding: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+  .header {
+    text-align: center;
+    text-transform: uppercase;
+    color: #406aa9;
+    font-size: 1.5rem;
+    width: 100%;
+    font-weight: bolder;
+  }
+
+  .nav-justified .nav-item {
+    background-color: #e2f3ff !important;
+    text-align: left !important;
+
+    .nav-link {
+      padding: 1.25rem 3rem !important;
+    }
+
+    .nav-link.active {
+      color: #3764a5 !important;
+      background-color: #e2f3ff !important;
+      border-bottom: 2px solid royalblue !important;
+      border-radius: 0 !important;
+    }
+  }
+}

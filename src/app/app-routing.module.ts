@@ -10,6 +10,7 @@ import { UsersComponent } from './routes/users/users.component';
 import { AdmindetailsComponent } from './routes/admindetails/admindetails.component';
 import { MastersdetailsComponent } from './routes/mastersdetails/mastersdetails.component';
 import { SubscribersdetailsComponent } from './routes/subscribersdetails/subscribersdetails.component';
+import { RegistrationComponent } from './routes/registration/registration.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'masterdetails', component: MastersdetailsComponent },
   { path: 'subscriberdetails', component: SubscribersdetailsComponent },
   { path: 'admindetails', component: AdmindetailsComponent },
+  { path: 'registration', component: RegistrationComponent },
   { path: '**', component: LoginComponent }
 ];
 

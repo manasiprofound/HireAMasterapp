@@ -19,8 +19,11 @@ import { UsersComponent } from './routes/users/users.component';
 import { FormsModule } from '@angular/forms';
 import { EditskillComponent } from './routes/editskill/editskill.component';
 import { DataTablesModule } from 'angular-datatables';
-import { Masterreg1Component } from './routes/masterreg1/masterreg1.component';
-
+import { RegistrationComponent } from './routes/registration/registration.component';
+import { RegistrationVerificationComponent } from './routes/registration-verification/registration-verification.component';
+import { RegistrationCompleteComponent } from './routes/registration-complete/registration-complete.component';
+import {RegistrationProfileComponent} from "./routes/registration-profile/registration-profile.component";
+import { NgxDropzoneModule } from 'ngx-dropzone';
 
 @NgModule({
   declarations: [
@@ -39,15 +42,17 @@ import { Masterreg1Component } from './routes/masterreg1/masterreg1.component';
     SubscribersdetailsComponent,
     UsersComponent,
     EditskillComponent,
-    Masterreg1Component,
-
-
+    RegistrationProfileComponent,
+    RegistrationComponent,
+    RegistrationVerificationComponent,
+    RegistrationCompleteComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    DataTablesModule
+    DataTablesModule,
+    NgxDropzoneModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
