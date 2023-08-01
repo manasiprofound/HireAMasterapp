@@ -24,6 +24,10 @@ import { RegistrationVerificationComponent } from './routes/registration-verific
 import { RegistrationCompleteComponent } from './routes/registration-complete/registration-complete.component';
 import {RegistrationProfileComponent} from "./routes/registration-profile/registration-profile.component";
 import { NgxDropzoneModule } from 'ngx-dropzone';
+import { AdminmenuComponent } from './adminmenu/adminmenu.component';
+import { AdminhomeComponent } from './adminhome/adminhome.component';
+import { AdminmasterComponent } from './adminmaster/adminmaster.component';
+import { AdminsubscriberComponent } from './adminsubscriber/adminsubscriber.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +49,11 @@ import { NgxDropzoneModule } from 'ngx-dropzone';
     RegistrationProfileComponent,
     RegistrationComponent,
     RegistrationVerificationComponent,
-    RegistrationCompleteComponent
+    RegistrationCompleteComponent,
+    AdminmenuComponent,
+    AdminhomeComponent,
+    AdminmasterComponent,
+    AdminsubscriberComponent
   ],
   imports: [
     BrowserModule,
