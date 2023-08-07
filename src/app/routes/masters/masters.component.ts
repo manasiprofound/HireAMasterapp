@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-masters',
   templateUrl: './masters.component.html',
-  styleUrls: ['./masters.component.css']
+  styleUrls: ['./masters.component.scss']
 })
 export class MastersComponent {
   mastersdetailspage = false;

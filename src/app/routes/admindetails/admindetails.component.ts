@@ -3,7 +3,7 @@ import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 @Component({
   selector: 'app-admindetails',
   templateUrl: './admindetails.component.html',
-  styleUrls: ['./admindetails.component.css']
+  styleUrls: ['./admindetails.component.scss']
 })
 export class AdmindetailsComponent implements OnInit {
 

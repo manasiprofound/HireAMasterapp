@@ -82,3 +82,86 @@ h2 {
   top: 60px;
   right: 500px;
 }
+
+
+*{
+  font-family: Mulish;
+}
+
+h1{
+  color: #3764A5;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.name{
+  display: flex;
+  width: 74px;
+  flex-direction: column;
+  flex-shrink: 0;
+  color: #40239f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.488px;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 0px;
+  width: 420px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #EAEAEA;
+  background: #FFF;
+}
+
+.right{
+  position: relative;
+  left : 500px;
+  bottom: 409px;
+}
+
+.save{
+  display: flex;
+  padding: 1em;
+  background: #F4C744;
+  color: #161618;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  position: relative;
+  top: 100px;
+  right: 500px;
+}
+
+.delete{
+  display: flex;
+  padding: 1em;
+  background: #D2D9DF;
+  color: #101016;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  position: relative;
+  top: 35px;
+  right:430px;
+}
+
+h2{
+  position: relative;
+  top: 50px;
+  right: 500px;
+}
+.Profileimg{
+  position: relative;
+  top: 60px;
+  right: 500px;
+} 
