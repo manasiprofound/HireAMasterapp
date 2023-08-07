@@ -22,12 +22,10 @@ import { DataTablesModule } from 'angular-datatables';
 import { RegistrationComponent } from './routes/registration/registration.component';
 import { RegistrationVerificationComponent } from './routes/registration-verification/registration-verification.component';
 import { RegistrationCompleteComponent } from './routes/registration-complete/registration-complete.component';
-import {RegistrationProfileComponent} from "./routes/registration-profile/registration-profile.component";
+import { RegistrationProfileComponent } from "./routes/registration-profile/registration-profile.component";
+import { RegistrationPersonalComponent } from './routes/registration-personal/registration-personal.component';
 import { NgxDropzoneModule } from 'ngx-dropzone';
-import { AdminmenuComponent } from './adminmenu/adminmenu.component';
-import { AdminhomeComponent } from './adminhome/adminhome.component';
-import { AdminmasterComponent } from './adminmaster/adminmaster.component';
-import { AdminsubscriberComponent } from './adminsubscriber/adminsubscriber.component';
+import { NgxEditorModule } from 'ngx-editor';
 
 @NgModule({
   declarations: [
@@ -50,10 +48,7 @@ import { AdminsubscriberComponent } from './adminsubscriber/adminsubscriber.comp
     RegistrationComponent,
     RegistrationVerificationComponent,
     RegistrationCompleteComponent,
-    AdminmenuComponent,
-    AdminhomeComponent,
-    AdminmasterComponent,
-    AdminsubscriberComponent
+    RegistrationPersonalComponent
   ],
   imports: [
     BrowserModule,
@@ -61,6 +56,7 @@ import { AdminsubscriberComponent } from './adminsubscriber/adminsubscriber.comp
     FormsModule,
     DataTablesModule,
     NgxDropzoneModule,
+    NgxEditorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
