@@ -46,9 +46,6 @@ width: 100%;
   background: #FFF;
 */
 .addskills {
-  position: relative;
-  bottom: 45px;
-  left: 350px;
   font-family: "Poppins";
   font-size: 18px;
   border-radius: 700px;
@@ -141,28 +138,21 @@ tr:hover {
 
 .save {
   display: flex;
-  padding: 1em;
+  padding: 0.75rem 1.5rem;
   background: #F4C744;
   color: #161618;
   border: none;
   border-radius: 30px;
   font-weight: 600;
-  position: relative;
-  top: 30px;
-  right: 0px;
 }
 
 .delete {
-  display: flex;
-  padding: 1em;
+  padding: 0.75rem 1.5rem;
   background: #D2D9DF;
   color: #101016;
   border: none;
   border-radius: 30px;
   font-weight: 600;
-  position: relative;
-  bottom: 30px;
-  left: 70px;
 }
 
 /**/

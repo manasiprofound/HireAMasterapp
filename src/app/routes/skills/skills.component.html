@@ -15,31 +15,26 @@
 
 <div *ngIf="skills">
   <h1>Skills</h1>
-  <form class="d-flex flex-row">
-    <div class="mx-2">
-      <input list="skills" id="myHouse" name="myHouse" placeholder="Skills" />
-      <datalist id="skills">
-        <option value="Maths"></option>
-        <option value="Art"></option>
-        <option value="Science"></option>
-        <option value="History"></option>
-        <option value="Geography"></option>
-      </datalist>
-    </div>
-
-    <div class="name mx-2">
-      <div class="sec-2">
-        <input type="text" name="category" placeholder="Category" />
+  <form class="form-group">
+    <div class="d-flex align-items-center">
+      <div class="me-3">
+        <input list="skills" id="myHouse" name="myHouse" class="form-control" placeholder="Skills" />
+          <datalist id="skills">
+            <option value="Maths"></option>
+            <option value="Art"></option>
+            <option value="Science"></option>
+            <option value="History"></option>
+            <option value="Geography"></option>
+          </datalist>
       </div>
-    </div>
-
-    <div class="mx-2">
-      <div class="Addskill">
+      <div class="">
+        <input type="text" name="category" class="form-control" placeholder="Category" />
+      </div>
+      <div class="ms-3">
         <button type="submit" class="addskills">Add Skills +</button>
       </div>
     </div>
   </form>
-
   <div class="skillstable">
     <table
       datatable
@@ -96,13 +91,10 @@
     </table>
   </div>
 
-  <div class="Button">
-    <button class="save" (click)="enableeditskill('editskillsbutton')">
+  <div class="d-flex align-items-center mt-4">
+    <button class="save me-3" (click)="enableeditskill('editskillsbutton')">
       Edit
     </button>
-
-    <br />
-
     <button class="delete">Delete</button>
   </div>
 </div>
