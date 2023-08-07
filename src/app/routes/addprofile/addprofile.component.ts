@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-addprofile',
   templateUrl: './addprofile.component.html',
-  styleUrls: ['./addprofile.component.css']
+  styleUrls: ['./addprofile.component.scss']
 })
 export class AddprofileComponent {
 
