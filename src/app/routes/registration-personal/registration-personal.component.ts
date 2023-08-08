@@ -17,6 +17,8 @@ export class RegistrationPersonalComponent {
 
   dates: number[] = Array.from({ length: (31 - 1) / 1 + 1 }, (value, i) => 1 + i * 1);
 
+  skills: string[] = ['Graphic Designing', 'HTML/CSS', 'Java', 'Maths', 'Science'];
+
   selectedMonth: string = "";
   selectedYear: number = 1;
 
