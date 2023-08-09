@@ -1,0 +1,94 @@
+<h1>Hi John, Welcome!</h1>
+
+<div class = "search-container">
+
+    <img class = "searchicon"src="assets/images/icons/search.png" alt="Search icon." width="20" 
+    >
+    <div class="sec-2">
+      <input type="text" name="searchbar" placeholder="Search" />
+    </div> 
+</div>
+<div class="Subscribers tables">
+  <button class="adminapplicantsdetails" (click)="enableapplicantsdetails('adminapplicantpage')"> 
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">NAME</th>
+          <th scope="col">CATEGORY</th>
+          <th scope="col">EMAIL</th>
+          <th scope="col">MOBILE</th>
+          <th scope="col">STATUS</th>
+          <th scope="col">ACTION</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+              alt=""
+              style="width: 40px; height: 40px"
+              class="rounded-circle"/></td>
+          <td>Rolands Rod</td>
+          <td>Frontend Programming</td>
+          <td>rolandr@gmial.com</td>
+          <td>+105 60606040</td>
+          <td>NEW</td>
+          <td>Donut</td>
+        </tr>
+        <tr>
+          <td><img src="https://images.pexels.com/photos/5378700/pexels-photo-5378700.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt=""
+              style="width: 40px; height: 40px"
+              class="rounded-circle"/></td>
+          <td>Nicholas simone</td>
+          <td>Frontend Programming</td>
+          <td>rolandr@gmial.com</td>
+          <td>+105 60606040</td>
+          <td>NEW</td>
+          <td>Donut</td>
+        </tr>
+        <tr>
+          <td><img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt=""
+              style="width: 40px; height: 40px"
+              class="rounded-circle"/></td>
+          <td>Jesse Adlord</td>
+          <td>Programming</td>
+          <td>rolandr@gmial.com</td>
+          <td>+105 60606040</td>
+          <td>NEW</td>
+          <td>Donut</td>
+        </tr>
+        <tr>
+          <td><img src="https://images.pexels.com/photos/5378700/pexels-photo-5378700.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt=""
+              style="width: 40px; height: 40px"
+              class="rounded-circle"/></td>
+          <td>Pooja Patil</td>
+          <td>Networking</td>
+          <td>rolandr@gmial.com</td>
+          <td>+105 60606040</td>
+          <td>NEW</td>
+          <td>Donut</td>
+        </tr>
+        <tr>
+          <td><img src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+              alt=""
+              style="width: 40px; height: 40px"
+              class="rounded-circle"/></td>
+          <td>Sheve jobs</td>
+          <td>Networking</td>
+          <td>rolandr@gmial.com</td>
+          <td>+105 60606040</td>
+          <td>NEW</td>
+          <td>Donut</td>
+        </tr>
+      </tbody>
+    </table>
+  </button>
+  
+</div>
+
+<div *ngIf="adminapplicantpage">
+  <app-adminapplicantsdetails></app-adminapplicantsdetails>
+</div>
