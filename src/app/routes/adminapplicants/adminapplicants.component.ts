@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./adminapplicants.component.scss']
 })
 export class AdminapplicantsComponent {
-  adminapplicantpage= true;
+  adminapplicants= true;
   adminapplicantdatailspage = false;
   userspage = ['adminapplicantbutton'];
 
@@ -18,7 +18,7 @@ export class AdminapplicantsComponent {
     console.log("insode");
     if(userspage == 'adminapplicantbutton'){
       console.log('hello');
-      this.adminapplicantpage= false;
+      this.adminapplicants= false;
       this.adminapplicantdatailspage = true;
     }
   }
