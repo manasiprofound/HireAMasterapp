@@ -7,19 +7,19 @@ import { Router } from '@angular/router';
   styleUrls: ['./adminapplicants.component.scss']
 })
 export class AdminapplicantsComponent {
-  adminapplicantpage= false;
-  adminmasters = true;
-  userspage = ['masterdetailsbutton'];
+  adminapplicantpage= true;
+  adminapplicantdatailspage = false;
+  userspage = ['adminapplicantbutton'];
 
 
   constructor(private router: Router ){}
   
   enableapplicantsdetails(userspage: string){
     console.log("insode");
-    if(userspage == 'adminapplicantpage'){
+    if(userspage == 'adminapplicantbutton'){
       console.log('hello');
-      this.adminapplicantpage= true;
-      this.adminmasters = false;
+      this.adminapplicantpage= false;
+      this.adminapplicantdatailspage = true;
     }
   }
 }
