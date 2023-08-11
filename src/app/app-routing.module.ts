@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './routes/login/login.component';
 import { HomeComponent } from './routes/home/home.component';
+import { HomepageComponent } from './routes/homepage/homepage.component';
 import { SkillsComponent } from './routes/skills/skills.component';
 import { SubscribersComponent } from './routes/subscribers/subscribers.component';
 import { MastersComponent } from './routes/masters/masters.component';
