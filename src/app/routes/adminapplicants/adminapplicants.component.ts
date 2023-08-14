@@ -14,12 +14,15 @@ export class AdminapplicantsComponent {
 
   constructor(private router: Router ){}
   
-  enableapplicantsdetails(userspage: string){
-    console.log("insode");
-    if(userspage == 'adminapplicantbutton'){
-      console.log('hello');
-      this.adminapplicants= false;
-      this.adminapplicantdatailspage = true;
-    }
-  }
+  enableapplicantsdetails(){
+    this.router.navigate(['adminapplicantdatailspage']);
+  }  
+  // enableapplicantsdetails(userspage: string){
+  //   console.log("insode");
+  //   if(userspage == 'adminapplicantbutton'){
+  //     console.log('hello');
+  //     this.adminapplicants= false;
+  //     this.adminapplicantdatailspage = true;
+  //   }
+  // }
 }
