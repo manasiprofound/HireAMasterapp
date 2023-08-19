@@ -12,15 +12,16 @@ import { AdmindetailsComponent } from './routes/admindetails/admindetails.compon
 import { MastersdetailsComponent } from './routes/mastersdetails/mastersdetails.component';
 import { SubscribersdetailsComponent } from './routes/subscribersdetails/subscribersdetails.component';
 import { RegistrationComponent } from './routes/registration/registration.component';
-import { HomepageComponent } from './routes/homepage/homepage.component';
 import { AdminhomeComponent } from './routes/adminhome/adminhome.component';
 import { AdminmasterComponent } from './routes/adminmaster/adminmaster.component';
 import { AdminsubscriberComponent } from './routes/adminsubscriber/adminsubscriber.component';
 import { AdminpaymentsComponent } from './routes/adminpayments/adminpayments.component';
 import { AdminapplicantsComponent } from './routes/adminapplicants/adminapplicants.component';
+import { AdminpaymentsdetailsComponent } from './routes/adminpaymentsdetails/adminpaymentsdetails.component';
+import { AdminapplicantsdetailsComponent } from './routes/adminapplicantsdetails/adminapplicantsdetails.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'adminpaymentdetails', pathMatch: 'full' },
   { path: 'users', component: UsersComponent },
   { path: 'login', component: LoginComponent },
   { path: 'home', component: HomeComponent },
@@ -30,7 +31,9 @@ const routes: Routes = [
   {path: 'adminmaster', component: AdminmasterComponent},
   {path: 'adminsubscriber', component: AdminsubscriberComponent},
   {path: 'adminpayment', component: AdminpaymentsComponent},
+  {path: 'adminpaymentdetails', component: AdminpaymentsdetailsComponent},
   {path: 'adminapplicants', component: AdminapplicantsComponent},
+  {path: 'adminapplicantdetails', component: AdminapplicantsdetailsComponent},
   { path: 'masters', component: MastersComponent },
   { path: 'subscribers', component: SubscribersComponent },
   { path: 'skills', component: SkillsComponent },
