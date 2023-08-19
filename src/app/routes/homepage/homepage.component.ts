@@ -11,7 +11,7 @@ export class HomepageComponent {
   constructor(private router: Router){}
 
   register(){
-    this.router.navigate(['masterreg']);
+    this.router.navigate(['registration']);
   }
 
   userlogin(){

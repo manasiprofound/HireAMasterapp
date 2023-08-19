@@ -26,6 +26,14 @@ import { RegistrationProfileComponent } from "./routes/registration-profile/regi
 import { RegistrationPersonalComponent } from './routes/registration-personal/registration-personal.component';
 import { NgxDropzoneModule } from 'ngx-dropzone';
 import { NgxEditorModule } from 'ngx-editor';
+import { AdminmenuComponent } from './Components/adminmenu/adminmenu.component';
+import { AdminhomeComponent } from './routes/adminhome/adminhome.component';
+import { AdminsubscriberComponent } from './routes/adminsubscriber/adminsubscriber.component';
+import { AdminpaymentsComponent } from './routes/adminpayments/adminpayments.component';
+import { AdminapplicantsComponent } from './routes/adminapplicants/adminapplicants.component';
+import { AdminpaymentsdetailsComponent } from './routes/adminpaymentsdetails/adminpaymentsdetails.component';
+import { AdminmasterComponent } from './routes/adminmaster/adminmaster.component';
+import { AdminapplicantdetailsComponent } from './routes/adminapplicantdetails/adminapplicantdetails.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +56,15 @@ import { NgxEditorModule } from 'ngx-editor';
     RegistrationComponent,
     RegistrationVerificationComponent,
     RegistrationCompleteComponent,
-    RegistrationPersonalComponent
+    RegistrationPersonalComponent,
+    AdminmenuComponent,
+    AdminhomeComponent,
+    AdminmasterComponent,
+    AdminsubscriberComponent,
+    AdminpaymentsComponent,
+    AdminapplicantsComponent,
+    AdminpaymentsdetailsComponent,
+    AdminapplicantdetailsComponent,
   ],
   imports: [
     BrowserModule,

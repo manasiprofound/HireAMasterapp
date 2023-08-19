@@ -39,12 +39,9 @@
             <label for="exampleFormControlInput1" class="form-label mb-2"
               >Skills Interested to Teach</label
             >
-            <input
-              type="text"
-              name="skills"
-              class="form-control"
-              id="exampleFormControlInput1"
-            />
+            <select class="form-select" aria-label="Skills">
+              <option *ngFor="let skill of skills" [value]="skill">{{ skill }}</option>
+            </select>
           </div>
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label mb-2"
@@ -190,7 +187,7 @@
             </div>
           </div>
           <div class="my-2">
-            <div class="form-check">
+            <!-- <div class="form-check">
               <input
                 class="form-check-input"
                 type="checkbox"
@@ -200,20 +197,20 @@
               <label class="form-check-label" for="flexCheckChecked">
                 I am Certified Teacher
               </label>
-            </div>
+            </div> -->
           </div>
-          <div class="d-flex flex-row mt-3">
-            <div class="mx-2 mr-2">
+          <div class="d-flex flex-row-reverse mt-5">
+            <div class="mr-2">
+              <button class="btn btn-secondary btn-submit" type="button">
+                Cancel
+              </button>
+            </div>
+            <div class="mx-2">
               <button
                 class="btn btn-warning btn-submit btn-block"
                 type="button"
               >
                 Save & Continue
-              </button>
-            </div>
-            <div class="mx-2">
-              <button class="btn btn-secondary btn-submit" type="button">
-                Cancel
               </button>
             </div>
           </div>
