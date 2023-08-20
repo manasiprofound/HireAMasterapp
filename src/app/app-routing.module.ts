@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './routes/login/login.component';
 import { HomeComponent } from './routes/home/home.component';
-import { HomepageComponent } from './routes/homepage/homepage.component';
 import { SkillsComponent } from './routes/skills/skills.component';
 import { SubscribersComponent } from './routes/subscribers/subscribers.component';
 import { MastersComponent } from './routes/masters/masters.component';
@@ -18,9 +17,10 @@ import { AdminmasterComponent } from './routes/adminmaster/adminmaster.component
 import { AdminsubscriberComponent } from './routes/adminsubscriber/adminsubscriber.component';
 import { AdminpaymentsComponent } from './routes/adminpayments/adminpayments.component';
 import { AdminapplicantsComponent } from './routes/adminapplicants/adminapplicants.component';
+import { AdminpaymentsdetailsComponent } from './routes/adminpaymentsdetails/adminpaymentsdetails.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'adminpaymentdetails', pathMatch: 'full' },
   { path: 'users', component: UsersComponent },
   { path: 'login', component: LoginComponent },
   { path: 'home', component: HomeComponent },
@@ -30,6 +30,7 @@ const routes: Routes = [
   {path: 'adminmaster', component: AdminmasterComponent},
   {path: 'adminsubscriber', component: AdminsubscriberComponent},
   {path: 'adminpayment', component: AdminpaymentsComponent},
+  {path: 'adminpaymentdetails', component: AdminpaymentsdetailsComponent},
   {path: 'adminapplicants', component: AdminapplicantsComponent},
   { path: 'masters', component: MastersComponent },
   { path: 'subscribers', component: SubscribersComponent },
