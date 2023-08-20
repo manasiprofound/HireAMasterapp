@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./adminpayments.component.scss']
 })
 export class AdminpaymentsComponent {
+<<<<<<< HEAD
   adminpayments= true;
   adminpaymentsdatailpage = false;
   userspage = ['adminapplicantbutton'];
@@ -20,5 +21,24 @@ export class AdminpaymentsComponent {
       this.adminpayments= false;
       this.adminpaymentsdatailpage = true;
     }
+=======
+  dtOptions: DataTables.Settings = {};
+  constructor( ){}
+
+  
+  ngOnInit(): void {
+    this.dtOptions = {
+      lengthChange: false,
+      searching: false,
+      language: {
+        paginate: {
+          next: '&#x3E;',
+          previous: '&#x3C;',
+          first: "",
+          last: ""
+        }
+      }
+    };
+>>>>>>> development
   }
 }

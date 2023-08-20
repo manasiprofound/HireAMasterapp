@@ -31,9 +31,9 @@ import { AdminhomeComponent } from './routes/adminhome/adminhome.component';
 import { AdminsubscriberComponent } from './routes/adminsubscriber/adminsubscriber.component';
 import { AdminpaymentsComponent } from './routes/adminpayments/adminpayments.component';
 import { AdminapplicantsComponent } from './routes/adminapplicants/adminapplicants.component';
-import { AdminapplicantsdetailsComponent } from './routes/adminapplicantsdetails/adminapplicantsdetails.component';
 import { AdminpaymentsdetailsComponent } from './routes/adminpaymentsdetails/adminpaymentsdetails.component';
 import { AdminmasterComponent } from './routes/adminmaster/adminmaster.component';
+import { AdminapplicantdetailsComponent } from './routes/adminapplicantdetails/adminapplicantdetails.component';
 
 @NgModule({
   declarations: [
@@ -63,8 +63,8 @@ import { AdminmasterComponent } from './routes/adminmaster/adminmaster.component
     AdminsubscriberComponent,
     AdminpaymentsComponent,
     AdminapplicantsComponent,
-    AdminapplicantsdetailsComponent,
     AdminpaymentsdetailsComponent,
+    AdminapplicantdetailsComponent,
   ],
   imports: [
     BrowserModule,

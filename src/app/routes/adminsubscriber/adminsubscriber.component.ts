@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./adminsubscriber.component.scss']
 })
 export class AdminsubscriberComponent {
+  dtOptions: DataTables.Settings = {};
+  constructor( ){}
 
+  
+  ngOnInit(): void {
+    this.dtOptions = {
+      lengthChange: false,
+      language: {
+        paginate: {
+          next: '&#x3E;',
+          previous: '&#x3C;',
+          first: "",
+          last: ""
+        }
+      }
+    };
+  }
 }
