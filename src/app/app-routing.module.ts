@@ -27,6 +27,7 @@ const routes: Routes = [
   { path: 'admin', component: UsersComponent },
   {path: 'adminhome', component: AdminhomeComponent},
   {path: 'adminmaster', component: AdminmasterComponent},
+  {path: 'adminmasterdetails', component: AdminmasterdetailsComponent},
   {path: 'adminsubscriber', component: AdminsubscriberComponent},
   {path: 'adminpayment', component: AdminpaymentsComponent},
   {path: 'adminpaymentdetails', component: AdminpaymentsdetailsComponent},
