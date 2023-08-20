@@ -8,10 +8,11 @@ import { Router } from '@angular/router';
 })
 export class AdminmasterComponent {
   adminmasters = true;
+  masterdetailspage = false;
   dtOptions: DataTables.Settings = {};
   constructor(private router: Router ){}
 
-  
+
   ngOnInit(): void {
     this.dtOptions = {
       lengthChange: false,
@@ -25,5 +26,12 @@ export class AdminmasterComponent {
         }
       }
     };
+  }
+
+  enableaddadmin(userspage: string) {
+    if (userspage === 'masterdetailspage') {
+      this.masterdetailspage = true;
+      this.adminmasters = false;
+    }
   }
 }

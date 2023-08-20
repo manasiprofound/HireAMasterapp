@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-adminpayments',
-  templateUrl: './adminpayments.component.html',
-  styleUrls: ['./adminpayments.component.scss']
+  selector: 'app-adminmasterdetails',
+  templateUrl: './adminmasterdetails.component.html',
+  styleUrls: ['./adminmasterdetails.component.scss']
 })
-export class AdminpaymentsComponent {
+export class AdminmasterdetailsComponent {
+  adminmasterdetails = true;
   dtOptions: DataTables.Settings = {};
-  constructor() { }
-
 
   ngOnInit(): void {
     this.dtOptions = {

@@ -7,9 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AdminsubscriberComponent {
   dtOptions: DataTables.Settings = {};
-  constructor( ){}
+  constructor() { }
 
-  
   ngOnInit(): void {
     this.dtOptions = {
       lengthChange: false,

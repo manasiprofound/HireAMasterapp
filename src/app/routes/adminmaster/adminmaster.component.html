@@ -1,11 +1,11 @@
 <div *ngIf="adminmasters">
   <h1>Masters</h1>
   <div class="mt-3">
-   <table
+    <table
       datatable
       [dtOptions]="dtOptions"
       class="table table-hover mt-5 table-striped"
-    
+      (click)="enableaddadmin('masterdetailspage')"
     >
       <thead>
         <tr>
@@ -15,7 +15,7 @@
           <th scope="col">EDUCATION</th>
           <th scope="col">MOBILE</th>
           <th scope="col">EMAIL</th>
-          <th scope="col">STATUS</th>
+          <th scope="col">ACTION</th>
         </tr>
       </thead>
 
@@ -66,7 +66,8 @@
           <td>info@gmail.com</td>
           <td>
             <span class="badge badge-success rounded-pill d-inline"
-              >Active</span>
+              >Active</span
+            >
           </td>
         </tr>
         <tr>
@@ -184,7 +185,8 @@
           <td>info@gmail.com</td>
           <td>
             <span class="badge badge-success rounded-pill d-inline"
-              >Active</span>
+              >Active</span
+            >
           </td>
         </tr>
         <tr>
@@ -261,4 +263,8 @@
   </div>
 </div>
 
-  
+<div class="Admin panel">
+  <div *ngIf="masterdetailspage">
+    <app-adminmasterdetails></app-adminmasterdetails>
+  </div>
+</div>
