@@ -6,11 +6,11 @@
   <h1>Admins</h1>
 </div>
 <div *ngIf="users" class="container mt-5">
-  <button class="admindetails" (click)="enableaddadmin('admindetailspage')"> 
-    <table
+  <table
       datatable
       [dtOptions]="dtOptions"
       class="table table-hover mt-5 table-striped"
+      (click)="enableaddadmin('admindetailspage')"
     >
       <thead>
         <tr>
@@ -138,7 +138,6 @@
         </tr>
       </tbody>
     </table>
-  </button> 
 </div>
 
 <div class="Admin panel">

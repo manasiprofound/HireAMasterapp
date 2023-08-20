@@ -8,5 +8,22 @@ import { Router } from '@angular/router';
 })
 export class AdminmasterComponent {
   adminmasters = true;
+  dtOptions: DataTables.Settings = {};
   constructor(private router: Router ){}
+
+  
+  ngOnInit(): void {
+    this.dtOptions = {
+      lengthChange: false,
+      searching: false,
+      language: {
+        paginate: {
+          next: '&#x3E;',
+          previous: '&#x3C;',
+          first: "",
+          last: ""
+        }
+      }
+    };
+  }
 }

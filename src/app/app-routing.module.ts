@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './routes/login/login.component';
 import { HomeComponent } from './routes/home/home.component';
+import { HomepageComponent } from './routes/homepage/homepage.component';
 import { SkillsComponent } from './routes/skills/skills.component';
 import { SubscribersComponent } from './routes/subscribers/subscribers.component';
 import { MastersComponent } from './routes/masters/masters.component';
@@ -11,7 +12,6 @@ import { AdmindetailsComponent } from './routes/admindetails/admindetails.compon
 import { MastersdetailsComponent } from './routes/mastersdetails/mastersdetails.component';
 import { SubscribersdetailsComponent } from './routes/subscribersdetails/subscribersdetails.component';
 import { RegistrationComponent } from './routes/registration/registration.component';
-import { HomepageComponent } from './routes/homepage/homepage.component';
 import { AdminhomeComponent } from './routes/adminhome/adminhome.component';
 import { AdminmasterComponent } from './routes/adminmaster/adminmaster.component';
 import { AdminsubscriberComponent } from './routes/adminsubscriber/adminsubscriber.component';
