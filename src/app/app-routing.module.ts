@@ -11,27 +11,42 @@ import { AdmindetailsComponent } from './routes/admindetails/admindetails.compon
 import { MastersdetailsComponent } from './routes/mastersdetails/mastersdetails.component';
 import { SubscribersdetailsComponent } from './routes/subscribersdetails/subscribersdetails.component';
 import { RegistrationComponent } from './routes/registration/registration.component';
-import { HomepageComponent } from './routes/homepage/homepage.component';
 import { AdminhomeComponent } from './routes/adminhome/adminhome.component';
 import { AdminmasterComponent } from './routes/adminmaster/adminmaster.component';
+import { AdminmasterdetailsComponent } from './routes/adminmasterdetails/adminmasterdetails.component';
 import { AdminsubscriberComponent } from './routes/adminsubscriber/adminsubscriber.component';
 import { AdminpaymentsComponent } from './routes/adminpayments/adminpayments.component';
 import { AdminapplicantsComponent } from './routes/adminapplicants/adminapplicants.component';
 import { AdminpaymentsdetailsComponent } from './routes/adminpaymentsdetails/adminpaymentsdetails.component';
+<<<<<<< HEAD
+=======
+import { AdminapplicantdetailsComponent } from './routes/adminapplicantdetails/adminapplicantdetails.component';
+>>>>>>> d6d717318945ec524533c3599154eaf9a00abef7
 
 const routes: Routes = [
   { path: '', redirectTo: 'adminpaymentdetails', pathMatch: 'full' },
   { path: 'users', component: UsersComponent },
   { path: 'login', component: LoginComponent },
   { path: 'home', component: HomeComponent },
-  {path: 'homepage', component: HomepageComponent},
+  { path: 'homepage', component: HomepageComponent },
   { path: 'admin', component: UsersComponent },
+<<<<<<< HEAD
   {path: 'adminhome', component: AdminhomeComponent},
   {path: 'adminmaster', component: AdminmasterComponent},
   {path: 'adminsubscriber', component: AdminsubscriberComponent},
   {path: 'adminpayment', component: AdminpaymentsComponent},
   {path: 'adminpaymentdetails', component: AdminpaymentsdetailsComponent},
   {path: 'adminapplicants', component: AdminapplicantsComponent},
+=======
+  { path: 'adminhome', component: AdminhomeComponent },
+  { path: 'adminmaster', component: AdminmasterComponent },
+  { path: 'adminmasterdetails', component: AdminmasterdetailsComponent },
+  { path: 'adminsubscriber', component: AdminsubscriberComponent },
+  { path: 'adminpayment', component: AdminpaymentsComponent },
+  { path: 'adminpaymentdetails', component: AdminpaymentsdetailsComponent },
+  { path: 'adminapplicants', component: AdminapplicantsComponent },
+  { path: 'adminapplicantsdetails', component: AdminapplicantdetailsComponent },
+>>>>>>> d6d717318945ec524533c3599154eaf9a00abef7
   { path: 'masters', component: MastersComponent },
   { path: 'subscribers', component: SubscribersComponent },
   { path: 'skills', component: SkillsComponent },
@@ -40,8 +55,29 @@ const routes: Routes = [
   { path: 'subscriberdetails', component: SubscribersdetailsComponent },
   { path: 'admindetails', component: AdmindetailsComponent },
   { path: 'registration', component: RegistrationComponent },
-  { path: '**', component: LoginComponent }
-
+  { path: '**', component: AdminapplicantdetailsComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'users', component: UsersComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'homepage', component: HomepageComponent },
+  { path: 'admin', component: UsersComponent },
+  { path: 'adminhome', component: AdminhomeComponent },
+  { path: 'adminmaster', component: AdminmasterComponent },
+  { path: 'adminsubscriber', component: AdminsubscriberComponent },
+  { path: 'adminpayment', component: AdminpaymentsComponent },
+  { path: 'adminpaymentdetails', component: AdminpaymentsdetailsComponent },
+  { path: 'adminapplicants', component: AdminapplicantsComponent },
+  { path: 'adminapplicantsdetails', component: AdminapplicantdetailsComponent },
+  { path: 'masters', component: MastersComponent },
+  { path: 'subscribers', component: SubscribersComponent },
+  { path: 'skills', component: SkillsComponent },
+  { path: 'addprofile', component: AddprofileComponent },
+  { path: 'masterdetails', component: MastersdetailsComponent },
+  { path: 'subscriberdetails', component: SubscribersdetailsComponent },
+  { path: 'admindetails', component: AdmindetailsComponent },
+  { path: 'registration', component: RegistrationComponent },
+  { path: '**', component: AdminapplicantdetailsComponent }
 ];
 
 @NgModule({

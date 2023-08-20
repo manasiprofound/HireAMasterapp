@@ -40,9 +40,7 @@ export class UsersComponent {
   //   this.router.navigate(['addprofile']);
   // }
   enableaddadmin(userspage: string) {
-    console.log("insode");
     if (userspage == 'addadminbutton') {
-      console.log('hello');
       this.addprofilepage = true;
       this.users = false;
       this.admindetailspage = false;

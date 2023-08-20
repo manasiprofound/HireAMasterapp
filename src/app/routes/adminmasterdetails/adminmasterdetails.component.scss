@@ -1,40 +1,24 @@
-* {
-  font-family: "Mulish", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+.blue-color {
+  color: #2a5a9f;
 }
 
-.addsubscribers {
-  position: relative;
-  top: 40px;
-  left: 0px;
-  font-size: 18px;
-  background: #f4c744;
-  color: rgb(12, 15, 15);
-  border-radius: 5px;
-  padding: 3px;
+.font-weight-bold {
+  font-weight: bolder;
 }
 
-h1 {
-  position: relative;
-  margin-top: 50px;
-  color: #3764a5;
-  font-size: 30px;
-  font-weight: 700;
+.text-transform-uppercase {
   text-transform: uppercase;
 }
 
-button {
-  border: none;
-  cursor: pointer;
-  appearance: none;
+.btn-submit {
+  border-radius: 1rem;
+  padding: 0.3rem 3rem;
 }
 
-img {
-  position: relative;
-  top: 60px;
+.btn-secondary {
+  background-color: #d2d9df;
+  border: 1px solid #d2d9df;
+  color: #333;
 }
 
 /**/
@@ -104,7 +88,7 @@ tr:hover {
   text-align: center;
 }
 
-.table-striped > tbody > tr:nth-child(even) > td,
-.table-striped > tbody > tr:nth-child(even) > th {
+.table-striped>tbody>tr:nth-child(even)>td,
+.table-striped>tbody>tr:nth-child(even)>th {
   background-color: #e2f3ff;
 }
