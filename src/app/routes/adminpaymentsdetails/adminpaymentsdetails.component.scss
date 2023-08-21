@@ -211,6 +211,18 @@ background-color: #f0ede1;
 border-radius: 500px;
 }
 
+h1{
+    position: relative;
+    left:320px;
+}
+
+.me{
+    width: 200px;
+    height: 118px;
+    position: relative;
+    bottom: 1135px;
+    left:670px;
+}
 .body-container1{
 width: 865px;
 height: 261px;
@@ -218,7 +230,7 @@ border-radius: 4px;
 background: #FFF;
 box-shadow: 0px 0px 13px 0px rgba(82, 63, 105, 0.15);
 position: relative;
-top: 50px;
+bottom: 100px;
 left:320px;
 }
 
@@ -304,15 +316,6 @@ padding-bottom: 5px;
 position: relative;
 bottom: 160px;
 left: 300px;
-}
-
-
-hr{
-background: #7c7676;
-width: 270px;
-height: 0px;
-flex-shrink: 0;
-border: 0; 
 }
 
 h2{
@@ -491,7 +494,7 @@ left: 640px;
     background: #D97934;
     color: #FFF;
     position: relative;
-    top: 20px;
+    top: 35px;
     left: 10px;
 }
 

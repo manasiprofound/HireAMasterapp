@@ -31,7 +31,7 @@ export class AdminapplicantsComponent {
   }
 
   enableapplicantsdetails(){
-    this.router.navigate(['adminapplicantdatailspage']);
+    this.router.navigate(['adminapplicantdetails']);
   }  
   // enableapplicantsdetails(userspage: string){
   //   console.log("insode");
@@ -41,4 +41,6 @@ export class AdminapplicantsComponent {
   //     this.adminapplicantdatailspage = true;
   //   }
   // }
+
+
 }

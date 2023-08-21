@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-adminpayments',
@@ -7,8 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AdminpaymentsComponent {
   dtOptions: DataTables.Settings = {};
-  constructor() { }
+  constructor(private router: Router) { }
 
+  enablepaymentsdetails(){
+    this.router.navigate(['adminpaymentdetails']);
+  } 
 
   ngOnInit(): void {
     this.dtOptions = {
