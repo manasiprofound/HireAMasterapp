@@ -11,11 +11,27 @@ export class AdminapplicantsComponent {
   adminapplicantdatailspage = false;
   userspage = ['adminapplicantbutton'];
 
+  dtOptions: DataTables.Settings = {};
 
   constructor(private router: Router ){}
   
+  ngOnInit(): void {
+    this.dtOptions = {
+      lengthChange: false,
+      searching: false,
+      language: {
+        paginate: {
+          next: '&#x3E;',
+          previous: '&#x3C;',
+          first: "",
+          last: ""
+        }
+      }
+    };
+  }
+
   enableapplicantsdetails(){
-    this.router.navigate(['adminapplicantdatailspage']);
+    this.router.navigate(['adminapplicantdetails']);
   }  
   // enableapplicantsdetails(userspage: string){
   //   console.log("insode");
@@ -25,4 +41,6 @@ export class AdminapplicantsComponent {
   //     this.adminapplicantdatailspage = true;
   //   }
   // }
+
+
 }

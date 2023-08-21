@@ -11,14 +11,14 @@ export class AdminmenuComponent {
   show1 = true;
   adminmasters = false;
   adminsubscribers = false;
-  adminpayments=false;
-  adminapplicants=false;
+  adminpayments = false;
+  adminapplicants = false;
   menu = "admin";
 
   constructor(private router: Router) { }
 
-  ngOnInit(): void {}
-  
+  ngOnInit(): void { }
+
   gotomastertable() {
     this.router.navigate(['adminmasters']);
   }
@@ -50,7 +50,7 @@ export class AdminmenuComponent {
       this.adminsubscribers = false;
       this.adminmasters = false;
       this.adminpayments = false;
-    }else if (menu == "adminpayments") {
+    } else if (menu == "adminpayments") {
       this.adminapplicants = false;
       this.adminsubscribers = false;
       this.adminmasters = false;

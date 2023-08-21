@@ -34,6 +34,7 @@ import { AdminapplicantsComponent } from './routes/adminapplicants/adminapplican
 import { AdminpaymentsdetailsComponent } from './routes/adminpaymentsdetails/adminpaymentsdetails.component';
 import { AdminmasterComponent } from './routes/adminmaster/adminmaster.component';
 import { AdminapplicantdetailsComponent } from './routes/adminapplicantdetails/adminapplicantdetails.component';
+import { AdminmasterdetailsComponent } from './routes/adminmasterdetails/adminmasterdetails.component';
 
 @NgModule({
   declarations: [
@@ -65,6 +66,7 @@ import { AdminapplicantdetailsComponent } from './routes/adminapplicantdetails/a
     AdminapplicantsComponent,
     AdminpaymentsdetailsComponent,
     AdminapplicantdetailsComponent,
+    AdminmasterdetailsComponent,
   ],
   imports: [
     BrowserModule,

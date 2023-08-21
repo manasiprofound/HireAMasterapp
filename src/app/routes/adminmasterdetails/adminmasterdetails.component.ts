@@ -1,18 +1,13 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-adminpayments',
-  templateUrl: './adminpayments.component.html',
-  styleUrls: ['./adminpayments.component.scss']
+  selector: 'app-adminmasterdetails',
+  templateUrl: './adminmasterdetails.component.html',
+  styleUrls: ['./adminmasterdetails.component.scss']
 })
-export class AdminpaymentsComponent {
+export class AdminmasterdetailsComponent {
+  adminmasterdetails = true;
   dtOptions: DataTables.Settings = {};
-  constructor(private router: Router) { }
-
-  enablepaymentsdetails(){
-    this.router.navigate(['adminpaymentdetails']);
-  } 
 
   ngOnInit(): void {
     this.dtOptions = {
