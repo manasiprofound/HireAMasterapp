@@ -10,11 +10,13 @@ export class MastermenuComponent {
 
   show = true;
   show1 = true;
+  //just change this individually as true to access the pages until the routing is done...
   mastermngavaibility = false;
   mastermngsessions = true;
   masteruplsessions = false;
+  //...just change this individually as true to access the pages until the routing is done
   menu = "master";
-
+  
   constructor(private router: Router) { }
 
   ngOnInit(): void {}
