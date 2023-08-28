@@ -19,9 +19,12 @@ import { AdminpaymentsComponent } from './routes/adminpayments/adminpayments.com
 import { AdminapplicantsComponent } from './routes/adminapplicants/adminapplicants.component';
 import { AdminpaymentsdetailsComponent } from './routes/adminpaymentsdetails/adminpaymentsdetails.component';
 import { AdminapplicantdetailsComponent } from './routes/adminapplicantdetails/adminapplicantdetails.component';
+import { MasterHomeComponent } from './routes/master-home/master-home.component';
+import { MasterMngavaibilityComponent } from './routes/master-mngavaibility/master-mngavaibility.component';
+import { MasterMngsessionsComponent } from './routes/master-mngsessions/master-mngsessions.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '', pathMatch: 'full' },
+  { path: '', redirectTo: 'mastermngavaibility', pathMatch: 'full' },
   { path: 'users', component: UsersComponent },
   { path: 'login', component: LoginComponent },
   { path: 'home', component: HomeComponent },
@@ -41,7 +44,9 @@ const routes: Routes = [
   { path: 'masterdetails', component: MastersdetailsComponent },
   { path: 'subscriberdetails', component: SubscribersdetailsComponent },
   { path: 'admindetails', component: AdmindetailsComponent },
-  { path: 'registration', component: RegistrationComponent },
+  { path: 'masterhome', component: MasterHomeComponent },
+  { path: 'mastermngavaibility', component: MasterMngavaibilityComponent },
+  { path: 'mastermngsessions', component: MasterMngsessionsComponent },
 ];
 
 @NgModule({

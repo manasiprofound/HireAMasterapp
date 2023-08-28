@@ -35,6 +35,11 @@ import { AdminpaymentsdetailsComponent } from './routes/adminpaymentsdetails/adm
 import { AdminmasterComponent } from './routes/adminmaster/adminmaster.component';
 import { AdminapplicantdetailsComponent } from './routes/adminapplicantdetails/adminapplicantdetails.component';
 import { AdminmasterdetailsComponent } from './routes/adminmasterdetails/adminmasterdetails.component';
+import { MasterMngsessionsComponent } from './routes/master-mngsessions/master-mngsessions.component';
+import { MasterMngavaibilityComponent } from './routes/master-mngavaibility/master-mngavaibility.component';
+import { MastermenuComponent } from './Components/mastermenu/mastermenu.component';
+import { MasterHomeComponent } from './routes/master-home/master-home.component';
+import { MasterUpcomsessionsComponent } from './routes/master-upcomsessions/master-upcomsessions.component';
 
 @NgModule({
   declarations: [
@@ -67,6 +72,12 @@ import { AdminmasterdetailsComponent } from './routes/adminmasterdetails/adminma
     AdminpaymentsdetailsComponent,
     AdminapplicantdetailsComponent,
     AdminmasterdetailsComponent,
+    MasterMngsessionsComponent,
+    MasterMngavaibilityComponent,
+    MastermenuComponent,
+    MasterHomeComponent,
+    MasterUpcomsessionsComponent,
+  
   ],
   imports: [
     BrowserModule,
