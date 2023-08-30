@@ -12,7 +12,7 @@ export class MastermenuComponent {
   show1 = true;
   //just change this individually as true to access the pages until the routing is done...
   mastermngavaibility = false;
-  mastermngsessions = true;
+  mastermngsessions = false;
   masteruplsessions = false;
   //...just change this individually as true to access the pages until the routing is done
   menu = "master";
@@ -37,16 +37,16 @@ export class MastermenuComponent {
 
   enablemasterMenu(menu: string) {
     console.log("hello  in enable menu");
-    if (menu == "adminmasters") {
+    if (menu == "mastermngavaibility") {
       this.mastermngavaibility = true;
       this.mastermngsessions = false;
       this.masteruplsessions = false;
-    } else if (menu == "adminsubscribers") {
+    } else if (menu == "mastermngsessions") {
       this.mastermngsessions = true;
       this.mastermngavaibility = false;
       this.masteruplsessions = false;
-    }else if (menu == "adminsubscribers") {
-      this.mastermngsessions = true;
+    }else if (menu == "masteruplsessions") {
+      this.mastermngsessions = false;
       this.mastermngavaibility = false;
       this.masteruplsessions = true;
     }
