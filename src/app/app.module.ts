@@ -40,6 +40,7 @@ import { MasterMngavaibilityComponent } from './routes/master-mngavaibility/mast
 import { MastermenuComponent } from './Components/mastermenu/mastermenu.component';
 import { MasterHomeComponent } from './routes/master-home/master-home.component';
 import { MasterUpcomsessionsComponent } from './routes/master-upcomsessions/master-upcomsessions.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -77,7 +78,7 @@ import { MasterUpcomsessionsComponent } from './routes/master-upcomsessions/mast
     MastermenuComponent,
     MasterHomeComponent,
     MasterUpcomsessionsComponent,
-  
+
   ],
   imports: [
     BrowserModule,
@@ -85,7 +86,8 @@ import { MasterUpcomsessionsComponent } from './routes/master-upcomsessions/mast
     FormsModule,
     DataTablesModule,
     NgxDropzoneModule,
-    NgxEditorModule
+    NgxEditorModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,76 +1,66 @@
-.calender{
-width: 282px;
-height: 408px;
-flex-shrink: 0;
-background: #E2F3FF;
-position: relative;
-left: 250px;
-top: 100px;
+.calender {
+  flex-shrink: 0;
+  background: #E2F3FF;
+  position: relative;
 }
 
-h1{
-color: #3764a5;
-font-size: 30px;
-font-weight: 700;
-text-transform: uppercase;
-position: relative;
-left: 300px;
-bottom:400px;
+h1 {
+  color: #3764a5;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 /**/
 
 table {
-width: 844px;
-height: 288px;
-border-collapse: collapse;
-position: relative;
-left: 300px;
-bottom:400px;
+  border-collapse: collapse;
+  position: relative;
 }
 
 th,
 td {
-padding: 5px;
-text-align: center;
-border-bottom: 1px solid #ddd;
+  text-align: left;
+  padding-left: 1rem;
+  border-bottom: 1px solid #ddd;
 }
 
 th {
-background-color: #d97934;
-color: white;
+  background-color: #d97934;
+  color: white;
 }
 
 tr:nth-child(even) {
-background-color: #f0f8ff;
+  background-color: #f0f8ff;
 }
 
 tr:hover {
-background-color: #def3ff;
+  background-color: #def3ff;
 }
 
 
 .rounded-circle {
-border-radius: 400px;
-position: relative;
-right: 00px;
-top: 00px;
+  border-radius: 400px;
+  position: relative;
+  right: 00px;
+  top: 00px;
 }
 
 .table {
-vertical-align: middle !important;
+  vertical-align: middle !important;
 }
 
 .table thead {
-height: 3rem;
-vertical-align: middle;
+  height: 3rem;
+  vertical-align: middle;
 }
 
 .table thead tr th {
-text-align: center;
+  text-align: left;
+  padding-left: 1rem;
 }
 
 .table-striped > tbody > tr:nth-child(even) > td,
 .table-striped > tbody > tr:nth-child(even) > th {
-background-color: #e2f3ff;
+  background-color: #e2f3ff;
 }
