@@ -22,6 +22,7 @@ import { AdminapplicantdetailsComponent } from './routes/adminapplicantdetails/a
 import { MasterHomeComponent } from './routes/master-home/master-home.component';
 import { MasterMngavaibilityComponent } from './routes/master-mngavaibility/master-mngavaibility.component';
 import { MasterMngsessionsComponent } from './routes/master-mngsessions/master-mngsessions.component';
+import { MasterModifyavaibilityComponent } from './routes/master-modifyavaibility/master-modifyavaibility.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'mastermngavaibility', pathMatch: 'full' },
@@ -47,6 +48,7 @@ const routes: Routes = [
   { path: 'masterhome', component: MasterHomeComponent },
   { path: 'mastermngavaibility', component: MasterMngavaibilityComponent },
   { path: 'mastermngsessions', component: MasterMngsessionsComponent },
+  { path: 'modifymasteracaibility', component: MasterModifyavaibilityComponent },
 ];
 
 @NgModule({
