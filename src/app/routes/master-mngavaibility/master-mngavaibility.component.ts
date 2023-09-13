@@ -9,7 +9,7 @@ import {Router} from "@angular/router";
 export class MasterMngavaibilityComponent {
   mastermngavaibility = true;
   dtOptions: DataTables.Settings = {};
-  constructor(private router: Router ){}
+  constructor(private router: Router) { }
 
 
   ngOnInit(): void {
@@ -25,5 +25,9 @@ export class MasterMngavaibilityComponent {
         }
       }
     };
+  }
+
+  enablemodifymasteracaibility(){
+    this.router.navigate(['modifymasteracaibility']);
   }
 }
