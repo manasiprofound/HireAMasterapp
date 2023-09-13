@@ -1,0 +1,97 @@
+h1 {
+  color: #3764A5;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+button {
+
+  font-size: 18px;
+  background: #f4c744;
+  color: rgb(12, 15, 15);
+  border-radius: 50px;
+  padding: 8px;
+  border: none;
+}
+
+.button1 {
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  left: 0;
+}
+
+.button2 {
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  left: 10px;
+}
+
+
+.button3 {
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  left: 20px;
+}
+
+/**/
+
+
+table {
+  width: 1190px;
+  height: 288px;
+  border-collapse: collapse;
+  position: relative;
+  left: 0;
+}
+
+th,
+td {
+  text-align: left;
+  padding-left: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #d97934;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f0f8ff;
+}
+
+tr:hover {
+  background-color: #def3ff;
+}
+
+
+.rounded-circle {
+  border-radius: 400px;
+  position: relative;
+  right: 00px;
+  top: 00px;
+}
+
+.table {
+  vertical-align: middle !important;
+}
+
+.table thead {
+  height: 3rem;
+  vertical-align: middle;
+}
+
+.table thead tr th {
+  text-align: left;
+}
+
+.table-striped > tbody > tr:nth-child(even) > td,
+.table-striped > tbody > tr:nth-child(even) > th {
+  background-color: #e2f3ff;
+}

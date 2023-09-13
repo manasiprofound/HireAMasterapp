@@ -1,0 +1,52 @@
+<div *ngIf="mastermngavaibility">
+    <h1>Master Manage availability</h1>
+    
+    <div class = "mastermanagementbutton">
+        <button class="button1" >Add</button>
+        <button class="button2"  (click)="enablemodifymasteracaibility()">Modify</button>
+        <button class="button3" >Remove</button>
+    </div>
+
+
+    <div>
+        <div class = "table">
+            <div class="mt-3">
+                <table datatable [dtOptions]="dtOptions"
+                  class="table table-hover mt-5 table-striped">
+                    <thead>
+                        <tr>
+                        <th scope="col">DATE</th>
+                        <th scope="col">TIME</th>
+                        <th scope="col">TIME</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>05/21/23</td>
+                            <td>3:00-5:00 pm</td>
+                            <td>7:00-8:00 pm</td>
+                        </tr>
+                        <tr>
+                            <td>05/21/23</td>
+                            <td>3:00-5:00 pm</td>
+                            <td>7:00-8:00 pm</td>
+                        </tr>
+                        <tr>
+                            <td>05/21/23</td>
+                            <td>3:00-5:00 pm</td>
+                            <td>7:00-8:00 pm</td>
+                        </tr>
+
+                        <tr>
+                            <td>05/21/23</td>
+                            <td>3:00-5:00 pm</td>
+                            <td>7:00-8:00 pm</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

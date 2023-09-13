@@ -1,0 +1,66 @@
+.calender {
+  flex-shrink: 0;
+  background: #E2F3FF;
+  position: relative;
+}
+
+h1 {
+  color: #3764a5;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/**/
+
+table {
+  border-collapse: collapse;
+  position: relative;
+}
+
+th,
+td {
+  text-align: left;
+  padding-left: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #d97934;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f0f8ff;
+}
+
+tr:hover {
+  background-color: #def3ff;
+}
+
+
+.rounded-circle {
+  border-radius: 400px;
+  position: relative;
+  right: 00px;
+  top: 00px;
+}
+
+.table {
+  vertical-align: middle !important;
+}
+
+.table thead {
+  height: 3rem;
+  vertical-align: middle;
+}
+
+.table thead tr th {
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.table-striped > tbody > tr:nth-child(even) > td,
+.table-striped > tbody > tr:nth-child(even) > th {
+  background-color: #e2f3ff;
+}
