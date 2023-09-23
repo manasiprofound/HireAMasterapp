@@ -105,3 +105,28 @@ tr:hover {
 .cursor-pointer {
   cursor: pointer !important;
 }
+
+.font-size-16 {
+  font-size: 16px !important;
+}
+
+.font-weight-bold {
+  font-weight: bold !important;
+}
+
+.message-details {
+  margin: 5rem 0 0 10rem !important;
+  background-color: #e2f3ff;
+  padding: 2rem;
+}
+
+.btn-submit {
+  border-radius: 1rem;
+  padding: 0.3rem 2rem;
+}
+
+.btn-secondary {
+  background-color: #d2d9df;
+  border: 1px solid #d2d9df;
+  color: #333;
+}

@@ -9,6 +9,7 @@ import {Router} from "@angular/router";
 export class MasterMngsessionsComponent {
   showCreateSessions: boolean = true;
   showScheduledSessions: boolean = false;
+  showManageSessionDetails: boolean = false;
   dtOptions: DataTables.Settings = {};
 
   constructor(private router: Router ){}
@@ -43,5 +44,9 @@ export class MasterMngsessionsComponent {
         this.showScheduledSessions = false;
         this.showCreateSessions = true;
     }
+  }
+
+  handleRowClick() {
+    this.showManageSessionDetails = true;
   }
 }
