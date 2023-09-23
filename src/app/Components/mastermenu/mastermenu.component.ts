@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import {Component} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-mastermenu',
@@ -14,12 +14,15 @@ export class MastermenuComponent {
   mastermngavaibility = false;
   mastermngsessions = false;
   masteruplsessions = false;
+  mastermessages = false;
   //...just change this individually as true to access the pages until the routing is done
   menu = "master";
-  
-  constructor(private router: Router) { }
 
-  ngOnInit(): void {}
+  constructor(private router: Router) {
+  }
+
+  ngOnInit(): void {
+  }
 
   // gotomastertable() {
   //   this.router.navigate(['adminmasters']);
@@ -41,14 +44,22 @@ export class MastermenuComponent {
       this.mastermngavaibility = true;
       this.mastermngsessions = false;
       this.masteruplsessions = false;
+      this.mastermessages = false;
     } else if (menu == "mastermngsessions") {
       this.mastermngsessions = true;
       this.mastermngavaibility = false;
       this.masteruplsessions = false;
-    }else if (menu == "masteruplsessions") {
+      this.mastermessages = false;
+    } else if (menu == "masteruplsessions") {
       this.mastermngsessions = false;
       this.mastermngavaibility = false;
       this.masteruplsessions = true;
+      this.mastermessages = false;
+    } else if (menu == "mastermessages") {
+      this.mastermngsessions = false;
+      this.mastermngavaibility = false;
+      this.masteruplsessions = false;
+      this.mastermessages = true;
     }
   }
 

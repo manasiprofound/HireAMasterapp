@@ -41,6 +41,7 @@ import { MastermenuComponent } from './Components/mastermenu/mastermenu.componen
 import { MasterHomeComponent } from './routes/master-home/master-home.component';
 import { MasterUpcomsessionsComponent } from './routes/master-upcomsessions/master-upcomsessions.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MasterMessagesComponent } from './routes/master-messages/master-messages.component';
 
 @NgModule({
   declarations: [
@@ -78,6 +79,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MastermenuComponent,
     MasterHomeComponent,
     MasterUpcomsessionsComponent,
+    MasterMessagesComponent,
 
   ],
   imports: [
