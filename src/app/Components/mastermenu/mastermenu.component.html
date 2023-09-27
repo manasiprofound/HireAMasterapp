@@ -11,26 +11,13 @@
       <div class="navigation-buttons">
         <hr/>
         <button class="profilepic" (click)="enablemasterMenu('masteruplsessions')">
-          <div class="image">
-            <img
-              src="assets/images/icons/pro.png"
-              alt="Slogan for subscribers."
-            />
+          <div class="d-flex align-items-center">
+            <i class="bi bi-house-door-fill" style="font-size: 1.25rem"></i>
+            <div class="text">Home</div>
           </div>
-          <div class="text">Home</div>
         </button>
         <hr/>
 
-        <button class="profilepic" (click)="enablemasterMenu('mastermessages')">
-          <div class="image">
-            <img
-              src="assets/images/icons/Upload.png"
-              alt="Slogan for subscribers."
-            />
-          </div>
-          <div class="text">Message</div>
-        </button>
-        <hr/>
         <button class="profilepic">
           <div class="image">
             <img
@@ -48,7 +35,7 @@
               alt="Slogan for subscribers."
             />
           </div>
-          <div class="text">Manage Session</div>
+          <div class="text">Sessions</div>
         </button>
         <hr/>
 
@@ -59,7 +46,14 @@
               alt="Slogan for master."
             />
           </div>
-          <div class="text">Manage Availability</div>
+          <div class="text">Availability</div>
+        </button>
+        <hr/>
+        <button class="profilepic" (click)="enablemasterMenu('mastermessages')">
+          <div class="d-flex align-items-center">
+            <i class="bi bi-chat" style="font-size: 1.25rem"></i>
+            <div class="text">Messages</div>
+          </div>
         </button>
         <hr/>
       </div>

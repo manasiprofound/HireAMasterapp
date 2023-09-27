@@ -9,6 +9,7 @@ import {Router} from "@angular/router";
 export class MasterMessagesComponent {
   mastermessages = true;
   dtOptions: DataTables.Settings = {};
+  showMessageDetails: boolean = false;
   constructor(private router: Router) { }
 
   ngOnInit(): void {
@@ -25,5 +26,9 @@ export class MasterMessagesComponent {
         }
       }
     };
+  }
+
+  handleRowClick() {
+    this.showMessageDetails = true;
   }
 }

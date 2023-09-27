@@ -26,7 +26,7 @@ import { MasterModifyavaibilityComponent } from './routes/master-modifyavaibilit
 import { MasterMessagesComponent } from './routes/master-messages/master-messages.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'mastermngavaibility', pathMatch: 'full' },
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'users', component: UsersComponent },
   { path: 'login', component: LoginComponent },
   { path: 'home', component: HomeComponent },
@@ -43,6 +43,7 @@ const routes: Routes = [
   { path: 'subscribers', component: SubscribersComponent },
   { path: 'skills', component: SkillsComponent },
   { path: 'addprofile', component: AddprofileComponent },
+  { path: 'registration', component: RegistrationComponent },
   { path: 'masterdetails', component: MastersdetailsComponent },
   { path: 'subscriberdetails', component: SubscribersdetailsComponent },
   { path: 'admindetails', component: AdmindetailsComponent },
