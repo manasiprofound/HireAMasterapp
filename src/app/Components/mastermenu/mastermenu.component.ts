@@ -15,6 +15,7 @@ export class MastermenuComponent {
   mastermngsessions = false;
   masteruplsessions = false;
   mastermessages = false;
+  masterprofile = false;
   //...just change this individually as true to access the pages until the routing is done
   menu = "master";
 
@@ -45,21 +46,31 @@ export class MastermenuComponent {
       this.mastermngsessions = false;
       this.masteruplsessions = false;
       this.mastermessages = false;
+      this.masterprofile = false;
     } else if (menu == "mastermngsessions") {
       this.mastermngsessions = true;
       this.mastermngavaibility = false;
       this.masteruplsessions = false;
       this.mastermessages = false;
+      this.masterprofile = false;
     } else if (menu == "masteruplsessions") {
       this.mastermngsessions = false;
       this.mastermngavaibility = false;
       this.masteruplsessions = true;
       this.mastermessages = false;
+      this.masterprofile = false;
     } else if (menu == "mastermessages") {
       this.mastermngsessions = false;
       this.mastermngavaibility = false;
       this.masteruplsessions = false;
       this.mastermessages = true;
+      this.masterprofile = false;
+    } else if (menu == "masterprofile") {
+      this.mastermngsessions = false;
+      this.mastermngavaibility = false;
+      this.masteruplsessions = false;
+      this.mastermessages = false;
+      this.masterprofile = true;
     }
   }
 

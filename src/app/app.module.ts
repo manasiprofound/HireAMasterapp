@@ -42,6 +42,7 @@ import { MasterHomeComponent } from './routes/master-home/master-home.component'
 import { MasterUpcomsessionsComponent } from './routes/master-upcomsessions/master-upcomsessions.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MasterMessagesComponent } from './routes/master-messages/master-messages.component';
+import { MasterProfileComponent } from './routes/master-profile/master-profile.component';
 
 @NgModule({
   declarations: [
@@ -80,6 +81,7 @@ import { MasterMessagesComponent } from './routes/master-messages/master-message
     MasterHomeComponent,
     MasterUpcomsessionsComponent,
     MasterMessagesComponent,
+    MasterProfileComponent,
 
   ],
   imports: [

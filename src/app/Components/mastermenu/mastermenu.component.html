@@ -18,7 +18,7 @@
         </button>
         <hr/>
 
-        <button class="profilepic">
+        <button class="profilepic" (click)="enablemasterMenu('masterprofile')">
           <div class="image">
             <img
               src="assets/images/icons/pro.png"
@@ -74,6 +74,9 @@
       </div>
       <div *ngIf="mastermessages">
         <app-master-messages></app-master-messages>
+      </div>
+      <div *ngIf="masterprofile">
+        <app-master-profile></app-master-profile>
       </div>
     </div>
   </div>

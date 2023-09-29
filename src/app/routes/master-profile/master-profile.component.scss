@@ -1,0 +1,135 @@
+h1 {
+  color: #3764A5;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Mulish";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h2 {
+  color: #3764A5;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Mulish";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h3 {
+  color: #3764A5;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "Mulish";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/**/
+table {
+  width: 1190px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding-left: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #d97934;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f0f8ff;
+}
+
+tr:hover {
+  background-color: #def3ff;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 14px;
+  border-radius: 400px;
+}
+
+.badge-secondary {
+  background-color: #6b6b6b;
+  color: #fff;
+}
+
+.badge-warning {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.badge-info {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.rounded-circle {
+  border-radius: 400px;
+  position: relative;
+  right: 00px;
+  top: 00px;
+}
+
+.table {
+  vertical-align: middle !important;
+}
+
+.table thead {
+  height: 3rem;
+  vertical-align: middle;
+}
+
+.table thead tr th {
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.table-striped > tbody > tr:nth-child(even) > td,
+.table-striped > tbody > tr:nth-child(even) > th {
+  background-color: #e2f3ff;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.font-size-16 {
+  font-size: 16px !important;
+}
+
+.font-weight-bold {
+  font-weight: bold !important;
+}
+
+.btn-submit {
+  border-radius: 1rem;
+  padding: 0.3rem 3rem;
+}
+
+.btn-secondary {
+  background-color: #d2d9df;
+  border: 1px solid #d2d9df;
+  color: #333;
+}
+
+.custom-scrollbar {
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    width: 1em;
+  }
+}

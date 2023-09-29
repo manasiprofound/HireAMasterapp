@@ -24,6 +24,7 @@ import { MasterMngavaibilityComponent } from './routes/master-mngavaibility/mast
 import { MasterMngsessionsComponent } from './routes/master-mngsessions/master-mngsessions.component';
 import { MasterModifyavaibilityComponent } from './routes/master-modifyavaibility/master-modifyavaibility.component';
 import { MasterMessagesComponent } from './routes/master-messages/master-messages.component';
+import {MasterProfileComponent} from "./routes/master-profile/master-profile.component";
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -52,6 +53,7 @@ const routes: Routes = [
   { path: 'mastermngsessions', component: MasterMngsessionsComponent },
   { path: 'modifymasteracaibility', component: MasterModifyavaibilityComponent },
   { path: 'mastermessages', component: MasterMessagesComponent },
+  { path: 'masterprofile', component: MasterProfileComponent }
 ];
 
 @NgModule({
