@@ -7,21 +7,21 @@
         <div class="name">
             <label for="email">First name</label>
             <div class="sec-2">
-            <input type="text" name="email" placeholder="" /> 
+            <input type="text" name="firstname" placeholder="" [(ngModel)] = "firstname" id="firstname"/> 
             </div>
         </div>
 
         <div class="name">
-            <label for="email">email ID</label>
+            <label for="email">Email ID</label>
             <div class="sec-2">
-            <input type="text" name="email" placeholder="" /> 
+            <input type="text" name="email" placeholder="" id="email" [(ngModel)] = "email"/> 
             </div>
         </div>
 
         <div class="name">
             <label for="email">Username</label>
             <div class="sec-2">
-            <input type="text" name="email" placeholder="" /> 
+            <input type="text" name="username" placeholder="" id="username" [(ngModel)] = "username"/> 
         </div>
     </div> 
 
@@ -30,34 +30,32 @@
         <div class="name">
             <label for="email">Last name</label>
             <div class="sec-2">
-            <input type="text" name="email" placeholder="" /> 
+            <input type="text" name="lastname" placeholder="" id="lastname" [(ngModel)] = "lastname"/> 
             </div>
         </div>
 
         <div class="name">
-            <label for="email">Number</label>
+            <label for="email">Mobile No.</label>
             <div class="sec-2">
-            <input type="text" name="email" placeholder="" /> 
+            <input type="text" name="mobile" placeholder="" id="mobile" [(ngModel)] = "mobile"/> 
             </div>
         </div>
 
         <div class="name">
             <label for="email">Password</label>
             <div class="sec-2">
-            <input type="text" name="email" placeholder="" /> 
+            <input type="text" name="password" placeholder="" id="password" [(ngModel)] = "password"/> 
         </div>
         
     </div>
+
 </div>
 
 
 <div class = "Button">
-
-    <button class="save" (click)="save()"> Save </button>
-
+    <button class="save" (click)="register()"> Save </button>
     <br>
-    
-    <button class="cancel" (click)="save()"> Cancel </button>
+    <button class="cancel" > Cancel </button>
 
 </div> 
 
