@@ -46,7 +46,6 @@ export class AddprofileComponent {
         console.log(resultData);
         alert("Student Registered Successfully");
         //this.getAllAdmin();
- 
         this.firstname = '';
         this.email = '';
         this.username = '';
