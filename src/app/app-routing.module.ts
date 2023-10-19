@@ -23,11 +23,15 @@ import { MasterHomeComponent } from './routes/master-home/master-home.component'
 import { MasterMngavaibilityComponent } from './routes/master-mngavaibility/master-mngavaibility.component';
 import { MasterMngsessionsComponent } from './routes/master-mngsessions/master-mngsessions.component';
 import { MasterModifyavaibilityComponent } from './routes/master-modifyavaibility/master-modifyavaibility.component';
+import { HomepageComponent } from './routes/homepage/homepage.component';
+import { UserloginComponent } from './routes/userlogin/userlogin.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'mastermngavaibility', pathMatch: 'full' },
+  { path: '', redirectTo: 'addadmin', pathMatch: 'full' },
   { path: 'users', component: UsersComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'userlogin', component: UserloginComponent },
+  {path: 'homepage', component: HomepageComponent},
   { path: 'home', component: HomeComponent },
   { path: 'admin', component: UsersComponent },
   { path: 'adminhome', component: AdminhomeComponent},
@@ -41,7 +45,8 @@ const routes: Routes = [
   { path: 'masters', component: MastersComponent },
   { path: 'subscribers', component: SubscribersComponent },
   { path: 'skills', component: SkillsComponent },
-  { path: 'addprofile', component: AddprofileComponent },
+  {path: 'registration', component: RegistrationComponent},
+  { path: 'addadmin', component: AddprofileComponent },
   { path: 'masterdetails', component: MastersdetailsComponent },
   { path: 'subscriberdetails', component: SubscribersdetailsComponent },
   { path: 'admindetails', component: AdmindetailsComponent },
