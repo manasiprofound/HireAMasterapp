@@ -9,7 +9,27 @@
   <div style="width: 280px; float: left">
     <div class="menu-container">
       <div class="navigation-buttons">
+        <hr/>
+        <button class="profilepic" (click)="enablemasterMenu('masteruplsessions')">
+          <div class="image">
+            <img
+              src="assets/images/icons/pro.png"
+              alt="Slogan for subscribers."
+            />
+          </div>
+          <div class="text">Home</div>
+        </button>
+        <hr/>
 
+        <button class="profilepic">
+          <div class="image">
+            <img
+              src="assets/images/icons/Upload.png"
+              alt="Slogan for subscribers."
+            />
+          </div>
+          <div class="text">Message</div>
+        </button>
         <hr/>
         <button class="profilepic">
           <div class="image">
@@ -20,18 +40,6 @@
           </div>
           <div class="text">Profile</div>
         </button>
-
-        <hr/>
-        <button class="availbility" (click)="enablemasterMenu('mastermngavaibility')">
-          <div class="image">
-            <img
-              src="assets/images/icons/mngava.png"
-              alt="Slogan for master."
-            />
-          </div>
-          <div class="text">Manage Availability</div>
-        </button>
-
         <hr/>
         <button class="profilepic" (click)="enablemasterMenu('mastermngsessions')">
           <div class="image">
@@ -42,18 +50,18 @@
           </div>
           <div class="text">Manage Session</div>
         </button>
-
         <hr/>
-        <button class="profilepic" (click)="enablemasterMenu('masteruplsessions')">
+
+        <button class="availbility" (click)="enablemasterMenu('mastermngavaibility')">
           <div class="image">
             <img
-              src="assets/images/icons/Upload.png"
-              alt="Slogan for subscribers."
+              src="assets/images/icons/mngava.png"
+              alt="Slogan for master."
             />
           </div>
-          <div class="text">Uploads</div>
+          <div class="text">Manage Availability</div>
         </button>
-
+        <hr/>
       </div>
     </div>
   </div>

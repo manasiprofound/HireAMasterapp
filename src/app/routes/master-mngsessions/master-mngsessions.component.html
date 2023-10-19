@@ -1,236 +1,248 @@
 <div>
-    <h1>Manage Sessions</h1>
-    <h2>Create Sessions</h2>
-    <div>
-        <table>
-            <thead>
-                <tr>
-                <th scope="col">NAME</th>
-                <th scope="col">TIME</th>
-                <th scope="col">ACTION</th>
-                </tr>
-            </thead>
+  <h1>Manage Sessions</h1>
 
-            <tbody>
-                <tr>
-                    <td>
-                        <div class="d-flex align-items-center">
-                        <div>
-                            <img
-                            src="https://mdbootstrap.com/img/new/avatars/8.jpg"
-                            alt=""
-                            style="width: 40px; height: 40px"
-                            class="rounded-circle"
-                            />
-                        </div>
-                        <div class="ms-3">Luna fermoyle</div>
-                        </div>
-                    </td>
-                    <td>7pm - 9pm</td>
-                    <td>
-                        <span class="badge badge-warning rounded-pill d-inline">Create</span>
-                        <span class="badge badge-success rounded-pill d-inline">Cancel</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="d-flex align-items-center">
-                        <div>
-                            <img
-                            src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                            alt=""
-                            style="width: 40px; height: 40px"
-                            class="rounded-circle"
-                            />
-                        </div>
-                        <div class="ms-3">Luna fermoyle</div>
-                        </div>
-                    </td>
-                    <td>7pm - 9pm</td>
-                    <td>
-                        <span class="badge badge-warning rounded-pill d-inline">Create</span>
-                        <span class="badge badge-success rounded-pill d-inline">Cancel</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="d-flex align-items-center">
-                        <div>
-                            <img
-                            src="https://mdbootstrap.com/img/new/avatars/8.jpg"
-                            alt=""
-                            style="width: 40px; height: 40px"
-                            class="rounded-circle"
-                            />
-                        </div>
-                        <div class="ms-3">Luna fermoyle</div>
-                        </div>
-                    </td>
-                    <td>7pm - 9pm</td>
-                    <td>
-                        <span class="badge badge-warning rounded-pill d-inline">Create</span>
-                        <span class="badge badge-success rounded-pill d-inline">Cancel</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="d-flex align-items-center">
-                        <div>
-                            <img
-                            src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                            alt=""
-                            style="width: 40px; height: 40px"
-                            class="rounded-circle"
-                            />
-                        </div>
-                        <div class="ms-3">Luna fermoyle</div>
-                        </div>
-                    </td>
-                    <td>7pm - 9pm</td>
-                    <td>
-                        <span class="badge badge-warning rounded-pill d-inline">Create</span>
-                        <span class="badge badge-success rounded-pill d-inline">Cancel</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="d-flex align-items-center">
-                        <div>
-                            <img
-                            src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                            alt=""
-                            style="width: 40px; height: 40px"
-                            class="rounded-circle"
-                            />
-                        </div>
-                        <div class="ms-3">Luna fermoyle</div>
-                        </div>
-                    </td>
-                    <td>7pm - 9pm</td>
-                    <td>
-                        <span class="badge badge-warning rounded-pill d-inline">Create</span>
-                        <span class="badge badge-success rounded-pill d-inline">Cancel</span>
-                    </td>
-                </tr>
-                
-            </tbody>
-        </table>
-    </div>
-    
-    <h3>Scheduled Sessions</h3>
-    <div>
-        <table>
-            <thead>
-                <tr>
-                <th scope="col">NAME</th>
-                <th scope="col">TIME</th>
-                <th scope="col">ACTION</th>
-                </tr>
-            </thead>
+  <div class="d-flex my-3 rounded-2 cursor-pointer">
+    <h3 class="p-2 bg-warning" [ngStyle]="{'color': showCreateSessions ? '#fff' : 'inherit'}"
+        (click)="handleTabChange(1)">Create Session</h3>
+    <h3 class="p-2 bg-warning" style="color: #000">|</h3>
+    <h3 class="p-2 bg-warning" [ngStyle]="{'color': showScheduledSessions ? '#fff' : 'inherit'}"
+        (click)="handleTabChange(2)">Manage Session</h3>
+  </div>
 
-            <tbody>
-                <tr>
-                    <td>
-                        <div class="d-flex align-items-center">
-                        <div>
-                            <img
-                            src="https://mdbootstrap.com/img/new/avatars/8.jpg"
-                            alt=""
-                            style="width: 40px; height: 40px"
-                            class="rounded-circle"
-                            />
-                        </div>
-                        <div class="ms-3">Luna fermoyle</div>
-                        </div>
-                    </td>
-                    <td>7pm - 9pm</td>
-                    <td>
-                        <span class="badge badge-warning rounded-pill d-inline">Create</span>
-                        <span class="badge badge-success rounded-pill d-inline">Cancel</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="d-flex align-items-center">
-                        <div>
-                            <img
-                            src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                            alt=""
-                            style="width: 40px; height: 40px"
-                            class="rounded-circle"
-                            />
-                        </div>
-                        <div class="ms-3">Luna fermoyle</div>
-                        </div>
-                    </td>
-                    <td>7pm - 9pm</td>
-                    <td>
-                        <span class="badge badge-warning rounded-pill d-inline">Create</span>
-                        <span class="badge badge-success rounded-pill d-inline">Cancel</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="d-flex align-items-center">
-                        <div>
-                            <img
-                            src="https://mdbootstrap.com/img/new/avatars/8.jpg"
-                            alt=""
-                            style="width: 40px; height: 40px"
-                            class="rounded-circle"
-                            />
-                        </div>
-                        <div class="ms-3">Luna fermoyle</div>
-                        </div>
-                    </td>
-                    <td>7pm - 9pm</td>
-                    <td>
-                        <span class="badge badge-warning rounded-pill d-inline">Create</span>
-                        <span class="badge badge-success rounded-pill d-inline">Cancel</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="d-flex align-items-center">
-                        <div>
-                            <img
-                            src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                            alt=""
-                            style="width: 40px; height: 40px"
-                            class="rounded-circle"
-                            />
-                        </div>
-                        <div class="ms-3">Luna fermoyle</div>
-                        </div>
-                    </td>
-                    <td>7pm - 9pm</td>
-                    <td>
-                        <span class="badge badge-warning rounded-pill d-inline">Create</span>
-                        <span class="badge badge-success rounded-pill d-inline">Cancel</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="d-flex align-items-center">
-                        <div>
-                            <img
-                            src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                            alt=""
-                            style="width: 40px; height: 40px"
-                            class="rounded-circle"
-                            />
-                        </div>
-                        <div class="ms-3">Luna fermoyle</div>
-                        </div>
-                    </td>
-                    <td>7pm - 9pm</td>
-                    <td>
-                        <span class="badge badge-warning rounded-pill d-inline">Create</span>
-                        <span class="badge badge-success rounded-pill d-inline">Cancel</span>
-                    </td>
-                </tr>
-                
-            </tbody>
-        </table>
-    </div>
+  <div *ngIf="showCreateSessions" class="mt-5">
+    <table datatable
+           [dtOptions]="dtOptions"
+           class="table table-hover mt-5 table-striped">
+      <thead>
+      <tr>
+        <th scope="col">STUDENTS NAME</th>
+        <th scope="col">TIME</th>
+        <th scope="col">ACTION</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr>
+        <td>
+          <div class="d-flex align-items-center">
+            <div>
+              <img
+                src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                alt=""
+                style="width: 40px; height: 40px"
+                class="rounded-circle"
+              />
+            </div>
+            <div class="ms-3">Luna fermoyle</div>
+          </div>
+        </td>
+        <td>7pm - 9pm</td>
+        <td>
+          <span class="badge badge-warning rounded-pill mx-2">Create</span>
+          <span class="badge badge-secondary rounded-pill mx-2">Cancel</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="d-flex align-items-center">
+            <div>
+              <img
+                src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt=""
+                style="width: 40px; height: 40px"
+                class="rounded-circle"
+              />
+            </div>
+            <div class="ms-3">Luna fermoyle</div>
+          </div>
+        </td>
+        <td>7pm - 9pm</td>
+        <td>
+          <span class="badge badge-warning rounded-pill mx-2">Create</span>
+          <span class="badge badge-secondary rounded-pill mx-2">Cancel</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="d-flex align-items-center">
+            <div>
+              <img
+                src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                alt=""
+                style="width: 40px; height: 40px"
+                class="rounded-circle"
+              />
+            </div>
+            <div class="ms-3">Luna fermoyle</div>
+          </div>
+        </td>
+        <td>7pm - 9pm</td>
+        <td>
+          <span class="badge badge-warning rounded-pill mx-2">Create</span>
+          <span class="badge badge-secondary rounded-pill mx-2">Cancel</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="d-flex align-items-center">
+            <div>
+              <img
+                src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt=""
+                style="width: 40px; height: 40px"
+                class="rounded-circle"
+              />
+            </div>
+            <div class="ms-3">Luna fermoyle</div>
+          </div>
+        </td>
+        <td>7pm - 9pm</td>
+        <td>
+          <span class="badge badge-warning rounded-pill mx-2">Create</span>
+          <span class="badge badge-secondary rounded-pill mx-2">Cancel</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="d-flex align-items-center">
+            <div>
+              <img
+                src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt=""
+                style="width: 40px; height: 40px"
+                class="rounded-circle"
+              />
+            </div>
+            <div class="ms-3">Luna fermoyle</div>
+          </div>
+        </td>
+        <td>7pm - 9pm</td>
+        <td>
+          <span class="badge badge-warning rounded-pill mx-2">Create</span>
+          <span class="badge badge-secondary rounded-pill mx-2">Cancel</span>
+        </td>
+      </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <div *ngIf="showScheduledSessions" class="mt-5">
+    <h2 class="mb-4">Scheduled Sessions</h2>
+    <table datatable
+           [dtOptions]="dtOptions"
+           class="table table-hover mt-5 table-striped">
+      <thead>
+      <tr>
+        <th scope="col">STUDENTS NAME</th>
+        <th scope="col">TIME</th>
+        <th scope="col">ACTION</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr>
+        <td>
+          <div class="d-flex align-items-center">
+            <div>
+              <img
+                src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                alt=""
+                style="width: 40px; height: 40px"
+                class="rounded-circle"
+              />
+            </div>
+            <div class="ms-3">Luna fermoyle</div>
+          </div>
+        </td>
+        <td>7pm - 9pm</td>
+        <td>
+          <span class="badge badge-warning rounded-pill mx-2">Create</span>
+          <span class="badge badge-secondary rounded-pill mx-2">Cancel</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="d-flex align-items-center">
+            <div>
+              <img
+                src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt=""
+                style="width: 40px; height: 40px"
+                class="rounded-circle"
+              />
+            </div>
+            <div class="ms-3">Luna fermoyle</div>
+          </div>
+        </td>
+        <td>7pm - 9pm</td>
+        <td>
+          <span class="badge badge-warning rounded-pill mx-2">Create</span>
+          <span class="badge badge-secondary rounded-pill mx-2">Cancel</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="d-flex align-items-center">
+            <div>
+              <img
+                src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                alt=""
+                style="width: 40px; height: 40px"
+                class="rounded-circle"
+              />
+            </div>
+            <div class="ms-3">Luna fermoyle</div>
+          </div>
+        </td>
+        <td>7pm - 9pm</td>
+        <td>
+          <span class="badge badge-warning rounded-pill mx-2">Create</span>
+          <span class="badge badge-secondary rounded-pill mx-2">Cancel</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="d-flex align-items-center">
+            <div>
+              <img
+                src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt=""
+                style="width: 40px; height: 40px"
+                class="rounded-circle"
+              />
+            </div>
+            <div class="ms-3">Luna fermoyle</div>
+          </div>
+        </td>
+        <td>7pm - 9pm</td>
+        <td>
+          <span class="badge badge-warning rounded-pill mx-2">Create</span>
+          <span class="badge badge-secondary rounded-pill mx-2">Cancel</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="d-flex align-items-center">
+            <div>
+              <img
+                src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt=""
+                style="width: 40px; height: 40px"
+                class="rounded-circle"
+              />
+            </div>
+            <div class="ms-3">Luna fermoyle</div>
+          </div>
+        </td>
+        <td>7pm - 9pm</td>
+        <td>
+          <span class="badge badge-warning rounded-pill mx-2">Create</span>
+          <span class="badge badge-secondary rounded-pill mx-2">Cancel</span>
+        </td>
+      </tr>
+
+      </tbody>
+    </table>
+  </div>
 </div>
